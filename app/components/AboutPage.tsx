@@ -35,7 +35,7 @@ export default function AboutPage() {
     }, [inView3]);
 
     return (
-        <div className="bg-white items-center justify-center min-h-screen py-20" id="about-section">
+        <section className="bg-white items-center justify-center min-h-screen py-20" id="about-section">
 
             <div className='container mx-auto'>
 
@@ -61,6 +61,6 @@ export default function AboutPage() {
 
             </div>
 
-        </div>
+        </section>
     );
 }

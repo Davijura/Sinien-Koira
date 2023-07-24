@@ -39,7 +39,7 @@ export default function Navbar() {
                     transition: 'all 0.3s ease-in-out',
                     boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
                 }}>
-                    <Link href="/#about-section"><button className='btn-ghost rounded-xl py-2 hover:bg-green-200 transition-colors duration-300'>O nás</button></Link>
+                    <button className='btn-ghost rounded-xl py-2 hover:bg-green-200 transition-colors duration-300'><a href="#about-section">O nás</a></button>
                     <Link href="/gallery"><button className='btn-ghost rounded-xl py-2 hover:bg-green-200 transition-colors duration-300'>Galerie</button></Link>
                     <Link href="/our-services"><button className='btn-ghost rounded-xl py-2 hover:bg-green-200 transition-colors duration-300'>Naše služby</button></Link>
                     <Link href="/objednavka-dreva"><button className='btn-ghost rounded-xl py-2 hover:bg-green-200 transition-colors duration-300'>Objednávka dřeva</button></Link>
