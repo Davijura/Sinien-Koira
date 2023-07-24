@@ -10,8 +10,8 @@ export default function AboutInfoSecond() {
                 </p>
             </div>
 
-            <div className="md:order-1 w-[350px] h-[320px] sm:w-[500px] sm:h-[370px]">
-                <img className="w-full h-full object-cover" src="/wood.jpg" alt="Logo" />
+            <div className="md:order-1 w-[500px] h-[370px] sm:w-[500px] sm:h-[370px]">
+                <img className="w-full h-full object-cover rounded-xl" src="/work.jpg" alt="Logo" />
             </div>
 
         </div>

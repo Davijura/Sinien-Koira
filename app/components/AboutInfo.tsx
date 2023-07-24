@@ -11,7 +11,7 @@ export default function AboutInfo() {
             </div>
 
             <div className="md:order-2 max-w-[500px] h-[370px]">
-                <img className="w-full h-full object-cover" src="/tree.jpg" alt="Logo" />
+                <img className="w-full h-full object-cover rounded-xl" src="/redTractor.jpg" alt="Logo" />
             </div>
 
         </div>
