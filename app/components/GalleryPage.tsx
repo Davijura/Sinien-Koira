@@ -9,17 +9,18 @@ type GalleryImage = {
 };
 
 const images: GalleryImage[] = [
-  { id: '1', src: '/tractor.jpg', alt: 'Popis obrázku 1' },
-  { id: '2', src: '/wood.jpg', alt: 'Popis obrázku 1' },
-  { id: '3', src: '/chainsaw.jpg', alt: 'Popis obrázku 1' },
-  { id: '4', src: '/tree.jpg', alt: 'Popis obrázku 1' },
-  { id: '5', src: '/les2.jpg', alt: 'Popis obrázku 1' },
-  { id: '6', src: '/les3.jpg', alt: 'Popis obrázku 1' },
-  { id: '7', src: '/tree.jpg', alt: 'Popis obrázku 1' },
-  { id: '8', src: '/les2.jpg', alt: 'Popis obrázku 1' },
-  { id: '9', src: '/les1.jpg', alt: 'Popis obrázku 1' },
-  { id: '10', src: '/les1.jpg', alt: 'Popis obrázku 1' },
-  { id: '11', src: '/les1.jpg', alt: 'Popis obrázku 1' },
+  { id: '1', src: '/woodG.jpg', alt: 'Dřevo na vlečce' },
+  { id: '2', src: '/forest.jpg', alt: 'Práce v lese' },
+  { id: '3', src: '/smallTree.jpg', alt: 'Lesní školka' },
+  { id: '4', src: '/void.jpg', alt: 'Práce v lese' },
+  { id: '5', src: '/fire.jpg', alt: 'Pálení dřeva' },
+  { id: '6', src: '/mediumTree.jpg', alt: 'Popis obrázku 1' },
+  { id: '7', src: '/fence.jpg', alt: 'Popis obrázku 1' },
+  { id: '8', src: '/smallTrees.jpg', alt: 'Popis obrázku 1' },
+  { id: '9', src: '/tree.jpg', alt: 'Popis obrázku 1' },
+  { id: '10', src: '/root.jpg', alt: 'Popis obrázku 1' },
+  { id: '11', src: '/tractor.jpg', alt: 'Popis obrázku 1' },
+  { id: '12', src: '/woodBlock.jpg', alt: 'Popis obrázku 1' },
   // přidej další obrázky podle potřeby
 ];
 

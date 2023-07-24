@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 type GalleryImage = {
   id: string;
@@ -58,7 +58,7 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
         </motion.div>
       ))}
 
-      <AnimatePresence>
+    
         {selectedImg && (
           <motion.div
             initial={{ opacity: 0 }}
@@ -94,7 +94,7 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
             </motion.div>
           </motion.div>
         )}
-      </AnimatePresence>
+      
     </div>
   );
 };
