@@ -10,7 +10,7 @@ export default function AboutInfoThird() {
                 </p>
             </div>
 
-            <div className="md:order-2 max-w-[500px] h-[370px]">
+            <div className="md:order-2 w-[500px] h-[370px]">
                 <img className="w-full h-full object-cover" src="/chainsaw.jpg" alt="Logo" />
             </div>
 
