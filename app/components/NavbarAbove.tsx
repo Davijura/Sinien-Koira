@@ -5,7 +5,7 @@ export default function NavbarAbove() {
         <div className="flex items-center bg-gray-800 h-12 justify-center md:justify-end  lg:px-32 md:px-14 px-8 ">
             <div className="">
                 <ul className="flex justify-between gap-5 text-white font-bold text-md">
-                    <li className="flex items-center">
+                    <li className="hidden sm:flex items-center">
                         <HiOutlineMail className="text-green-500 mr-2" size={24} />
                         <a href="mailto:sinienkoira@gmail.com">sinienkoira@gmail.com</a>
                     </li>
