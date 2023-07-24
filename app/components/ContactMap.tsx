@@ -17,14 +17,14 @@ export default function ContactMap() {
         <div className='mx-auto items-center pt-10' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
             <div className='items-center text-black'>
                 <div>
-                    {/* <LoadScript googleMapsApiKey='AIzaSyDTfDO8K3WJ0fzu2UPGii--OXQxKV0o6iM'> */}
+                    <LoadScript googleMapsApiKey='AIzaSyDTfDO8K3WJ0fzu2UPGii--OXQxKV0o6iM'>
                         <GoogleMap
                             mapContainerStyle={mapStyles}
                             zoom={14}
                             center={defaultCenter}>
                             <Marker position={defaultCenter} />
                         </GoogleMap>
-                    {/* </LoadScript> */}
+                    </LoadScript>
                 </div>
             </div>
         </div>
