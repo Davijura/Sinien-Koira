@@ -57,16 +57,30 @@ export default function Navbar() {
 
             <div className={`drawer-side ${drawerOpen ? 'z-50' : ''}`}>
                 <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-                <ul className="menu p-4 h-screen bg-base-200 text-2xl font-semibold text-green-600" style={{
+                <ul className="menu p-4 pt-8 h-screen bg-base-200 text-2xl font-semibold text-green-600" style={{
                     background: 'linear-gradient(135deg, #ece9e6, #ffffff)',
                     transition: 'all 0.3s ease-in-out',
                     boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
                 }}>
-                    <Link href="/#about-section"><button className='btn-ghost rounded-xl py-2 hover:bg-green-200 transition-colors duration-300'>O nás</button></Link>
-                    <Link href="/gallery"><button className='btn-ghost rounded-xl py-2 hover:bg-green-200 transition-colors duration-300'>Galerie</button></Link>
-                    <Link href="/our-services"><button className='btn-ghost rounded-xl py-2 hover:bg-green-200 transition-colors duration-300'>Naše služby</button></Link>
-                    <Link href="/objednavka-dreva"><button className='btn-ghost rounded-xl py-2 hover:bg-green-200 transition-colors duration-300'>Objednávka dřeva</button></Link>
-                    <Link href="/contact"><button className='btn-ghost rounded-xl py-2 hover:bg-green-200 transition-colors duration-300'>Kontakt</button></Link>
+                    <Link href="/#about-section">
+                        <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>O nás</button>
+                    </Link>
+                    <hr className="border-black" />
+                    <Link href="/gallery">
+                        <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Galerie</button>
+                    </Link>
+                    <hr className="border-black" />
+                    <Link href="/our-services">
+                        <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Naše služby</button>
+                    </Link>
+                    <hr className="border-black" />
+                    <Link href="/objednavka-dreva">
+                        <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Objednávka dřeva</button>
+                    </Link>
+                    <hr className="border-black" />
+                    <Link href="/contact">
+                        <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Kontakt</button>
+                    </Link>
                 </ul>
             </div>
         </div>
