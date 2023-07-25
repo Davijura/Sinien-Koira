@@ -18,7 +18,7 @@ export default function ContactInfo() {
             </div>
 
             <div>
-                <h2 className="font-bold">Sídlo firmy:</h2>
+                <h2 className="font-bold">Prodejna dřeva:</h2>
                 <p>Pod Kosířem 333</p>
                 <p>798 16 Čelechovice </p>
                 <p>IČ: 11980389</p>
