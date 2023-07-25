@@ -1,4 +1,4 @@
-import { FormEvent } from 'react';
+import { FormEvent, useState } from 'react';
 import { motion } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 import OrderWood from './OrderWood';
@@ -9,10 +9,13 @@ import FormRadio from './FormRadio';
 
 export default function OrderForm() {
   const {
+    
     isFormSubmitted, setFormSubmitted, isAgreementChecked, setAgreementChecked, form,
     total, prices, quantities, setQuantities, personalData, setPersonalData,
     handlePersonalDataChange, handleAgreementChange, handleChange, resetForm
   } = useOrderForm();
+
+  const [isDeliverySelected, setIsDeliverySelected] = useState(false);
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
@@ -29,7 +32,7 @@ export default function OrderForm() {
         ...quantities,
       };
 
-      emailjs.send('service_1rbe336', 'template_1h6g1q2', templateParams, 'yeWCwgC2fF2o2kGVV')
+      emailjs.send('service_1rbe336', 'template_1h6g1q2', {...templateParams, isDeliverySelected}, 'yeWCwgC2fF2o2kGVV')
         .then((result) => {
           console.log(result.text);
           setFormSubmitted(true)
@@ -61,7 +64,7 @@ export default function OrderForm() {
 
         <div className="divider"></div>
 
-        <FormRadio />
+        <FormRadio setIsDeliverySelected={setIsDeliverySelected} />
 
         <h2 className="block text-black text-lg font-bold mb-4 mt-4">Osobní informace</h2>
 

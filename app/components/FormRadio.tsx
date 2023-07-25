@@ -1,10 +1,13 @@
 import { useState } from 'react'
 
-export default function FormRadio() {
+export default function FormRadio({ setIsDeliverySelected }: { setIsDeliverySelected: (isDeliverySelected: boolean) => void }) {
     const [selectedOption, setSelectedOption] = useState('');
+    const [isDeliveryOptionSelected, setDeliveryOptionSelected] = useState(false);
 
     const handleRadioChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
         setSelectedOption(e.target.value);
+        setDeliveryOptionSelected(e.target.value === 'Zajistit dopravu');
+        setIsDeliverySelected(e.target.value === 'Zajistit dopravu');
     }
 
     return (
