@@ -44,7 +44,7 @@ export default function HomeHead() {
                                 </button>
                             </Link>
                             <Link href="/contact">
-                                <button className="btn btn-primary py-2 hover:bg-gray-300 bg-gray-200 border-none text-green-700">
+                                <button className="btn btn-primary py-2 hover:bg-gray-400 bg-gray-200 border-none text-green-700">
                                     Kontakt
                                 </button>
                             </Link>

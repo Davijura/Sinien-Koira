@@ -5,6 +5,7 @@ import OrderWood from './OrderWood';
 import OrderInfo from './OrderInfo';
 import Checkbox from './Checkbox';
 import { useOrderForm } from '../hooks/useOrderForm';
+import FormRadio from './FormRadio';
 
 export default function OrderForm() {
   const {
@@ -59,6 +60,8 @@ export default function OrderForm() {
         </div>
 
         <div className="divider"></div>
+
+        <FormRadio />
 
         <h2 className="block text-black text-lg font-bold mb-4 mt-4">Osobní informace</h2>
 
