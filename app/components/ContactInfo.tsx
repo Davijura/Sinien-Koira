@@ -9,7 +9,7 @@ export default function ContactInfo() {
                     <HiOutlinePhone className="mr-2" color='green' size={24} />
                     Telefon:
                 </h2>
-                <p className='text-green-600 font-bold'>+420 720 247 411</p>
+                <p className='text-green-600 font-bold'>+420 720 062 090</p>
                 <h2 className="font-bold mt-4 flex items-center">
                     <HiOutlineMail className="mr-2" color='green' size={24} />
                     Email:
@@ -21,7 +21,7 @@ export default function ContactInfo() {
                 <h2 className="font-bold">Sídlo firmy:</h2>
                 <p>Pod Kosířem 333</p>
                 <p>798 16 Čelechovice </p>
-                <p>IČ: 74104012</p>
+                <p>IČ: 11980389</p>
             </div>
 
         </div>
