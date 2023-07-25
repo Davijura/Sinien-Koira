@@ -29,12 +29,10 @@ export default function Navbar() {
             <div className="drawer-content">
                 <div className={`navbar flex justify-between h-28 lg:px-24 px-10 z-20 fixed w-screen ${atTop ? 'bg-transparent' : ''}`}
                     style={atTop ? {} : { background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)', opacity: 0.9 }}>
-                    <div className="navbar-start ">
-                        {drawerOpen ? null :
+                    <div className="navbar-start ">    
                             <Link href="/">
                                 <p className='text-3xl font-bold whitespace-nowrap lg:text-4xl md:text-3xl '>Sinien Koira</p>
                             </Link>
-                        }
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1 text-blue-white font-bold text-xl">
