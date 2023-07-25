@@ -58,43 +58,43 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
         </motion.div>
       ))}
 
-    
-        {selectedImg && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.5 }}
-            className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-60 z-50"
-            onClick={handleClose}
-          >
+
+      {selectedImg && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          exit={{ opacity: 0 }}
+          transition={{ duration: 0.5 }}
+          className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-70 z-50"
+          onClick={handleClose}
+        >
+          <div className="m-4 rounded-xl max-w-screen-md max-h-screen-md overflow-hidden">
             <motion.img
               initial={{ y: '-100vh' }}
               animate={{ y: 0 }}
               exit={{ y: '100vh' }}
               src={selectedImg}
-              className="max-w-9/10 max-h-9/10 md:max-w-md md:max-h-md m-4 rounded-xl"
+              className="w-full h-full object-contain"
               alt="Enlarged pic"
             />
+          </div>
 
-            <motion.div
-              className="absolute top-4 right-4 cursor-pointer"
-              whileHover={{ scale: 1.2 }}
-              whileTap={{ scale: 0.8 }}
-              onClick={(e) => {
-                e.stopPropagation();
-                handleClose();
-              }}
-            >
-              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-
-
-            </motion.div>
+          <motion.div
+            className="absolute top-4 right-4 cursor-pointer"
+            whileHover={{ scale: 1.2 }}
+            whileTap={{ scale: 0.8 }}
+            onClick={(e) => {
+              e.stopPropagation();
+              handleClose();
+            }}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
           </motion.div>
-        )}
-      
+        </motion.div>
+      )}
+
     </div>
   );
 };
