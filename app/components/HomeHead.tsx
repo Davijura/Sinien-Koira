@@ -34,7 +34,7 @@ export default function HomeHead() {
                         <h1 className="text-5xl md:text-5xl lg:text-6xl text-white font-bold leading-none">
                             Odborné  <span className="font-bold text-green-600">lesnictví</span> a  <span className="font-bold text-green-600">výsadba stromů</span> pro lepší budoucnost
                         </h1>
-                        <p className="py-6 text-2xl text-white font-bold">Nabízíme kvalitní palivové dříví</p>
+                        <p className="py-6 text-xl text-white font-bold">Nabízíme kvalitní palivové dříví</p>
 
 
                         <div className="flex flex-row gap-4 justify-left">
@@ -44,7 +44,7 @@ export default function HomeHead() {
                                 </button>
                             </Link>
                             <Link href="/contact">
-                                <button className="btn btn-primary py-2 hover:bg-gray-400 bg-gray-200 border-none text-green-700">
+                                <button className="btn btn-primary py-2 hover:bg-gray-400 bg-gray-100 border-none text-green-700">
                                     Kontakt
                                 </button>
                             </Link>
