@@ -23,7 +23,9 @@ export default function ContactPage() {
                     </motion.div>
                 </div>
 
-                <ContactMap />
+                <div>
+                    <ContactMap />
+                </div>
 
             </div>
         </div>
