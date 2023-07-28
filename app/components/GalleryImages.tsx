@@ -5,7 +5,6 @@ type GalleryImage = {
   id: string;
   src: string;
   alt: string;
-
 };
 
 type GalleryImagesProps = {
@@ -27,25 +26,19 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
   return (
     <div className="grid grid-cols-1 pb-10 min-h-screen w-max mx-auto sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
       {images.map((image) => (
-        <motion.div
+        <div
           key={image.id}
-          className="relative overflow-hidden shadow-lg rounded-lg cursor-pointer hover:shadow-2xl transition duration-500 w-[450px] h-[325px]"
+          className="relative overflow-hidden shadow-lg rounded-lg cursor-pointer hover:shadow-2xl transition duration-500 w-80 h-80 sm:w-96 sm:h-96"
           onMouseEnter={() => setActiveImage(image.id)}
           onMouseLeave={() => setActiveImage(null)}
           onClick={() => handleOpen(image.src)}
-          initial={{ opacity: 0, scale: 0.9 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
         >
-          <div
-            className="absolute inset-0"
-            style={{
-              backgroundImage: `url(${image.src})`,
-              backgroundSize: 'cover',
-              backgroundPosition: 'center top'
-            }}
-          >
-          </div>
+          <img
+            className="absolute inset-0 object-cover object-center w-full h-full"
+            src={image.src}
+            alt={image.alt}
+            loading="lazy"
+          />
 
           <div
             className={`absolute bottom-0 left-0 bg-gray-200 bg-opacity-70 w-full transform transition-all duration-500 overflow-hidden p-2 ${activeImage === image.id ? 'translate-y-0' : 'translate-y-full'
@@ -55,9 +48,8 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
               {image.alt}
             </p>
           </div>
-        </motion.div>
+        </div>
       ))}
-
 
       {selectedImg && (
         <motion.div
@@ -70,11 +62,12 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
         >
           <div className="m-4 rounded-xl max-w-screen-md max-h-screen-md overflow-hidden">
             <motion.img
+              loading='lazy'
               initial={{ y: '-100vh' }}
               animate={{ y: 0 }}
               exit={{ y: '100vh' }}
               src={selectedImg}
-              className="w-full h-full object-contain"
+              className="h-auto w-auto object-contain"
               alt="Enlarged pic"
             />
           </div>
@@ -94,16 +87,8 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
           </motion.div>
         </motion.div>
       )}
-
     </div>
   );
 };
 
 export default GalleryImages;
-
-
-
-
-
-
-

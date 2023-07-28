@@ -5,7 +5,7 @@ export default function AboutInfoSecond() {
 
             <div className="md:order-2 max-w-[450px]">
                 <p className='font-bold text-black text-2xl pb-5 text-left'><strong>Nabízíme komplexní služby v oblasti lesnictví, včetně těžby dřeva a prodeje palivového dřeva.</strong></p>
-                <p className="text-base sm:text-lg lg:text-xl text-black leading-relaxed">
+                <p className="text-lg text-black leading-relaxed">
                     Naše týmy se skládají z kvalifikovaných odborníků s bohatými zkušenostmi v oblasti lesnictví. Pro dosažení optimálních výsledků pečlivě vybíráme nejefektivnější techniky a postupy. Jsme hrdí na naši ekologickou odpovědnost a dodržujeme přísné normy a předpisy týkající se ochrany životního prostředí a udržitelného využívání přírodních zdrojů. Součástí naší práce je také aktivní účast na programu obnovy lesů a podpora projektů zaměřených na ochranu biodiverzity.
                 </p>
             </div>

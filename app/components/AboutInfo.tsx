@@ -5,7 +5,7 @@ export default function AboutInfo() {
 
             <div className="md:order-1 max-w-[450px]">
                 <p className='font-bold text-black text-2xl pb-5 text-left'><strong>Vítejte u Vašeho společníka v oblasti lesnictví, těžby dřeva a pěstebních činností.</strong></p>
-                <p className="text-base sm:text-lg lg:text-xl text-black leading-relaxed">
+                <p className="text-lg text-black leading-relaxed">
                     Jsme mladá a dynamická společnost s hlubokou vášní a respektem ke krajině. Nacházíme se přímo v srdci přírody, kde máme možnost obdivovat nezměrnou krásu a hodnoty, které lesy přinášejí. Naše cíle a metody v oblasti těžby dřeva jsou navrženy tak, aby byly udržitelné a šetrné k přírodě.
                 </p>
             </div>

@@ -53,9 +53,9 @@ export default function Navbar() {
                 </div>
             </div>
 
-            <div className="drawer-side lg:hidden z-50">
+            <div className="drawer-side h-screen lg:hidden z-50">
                 <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-                <ul className="menu p-4 pt-8 h-screen bg-base-200 text-2xl font-semibold text-green-600" style={{
+                <ul className="menu p-4 pt-8 min-h-screen bg-base-200 text-2xl font-semibold text-green-600" style={{
                     background: 'linear-gradient(135deg, #ece9e6, #ffffff)',
                     transition: 'all 0.3s ease-in-out',
                     boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'

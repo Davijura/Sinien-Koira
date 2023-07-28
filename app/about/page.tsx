@@ -7,7 +7,9 @@ export default function About() {
   return (
     <div>
 
-      <NavbarAbove />
+      <div className='hidden sm:block'>
+        <NavbarAbove />
+      </div>
 
       <NewNavbar />
 
