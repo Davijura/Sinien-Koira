@@ -7,7 +7,9 @@ export default function ObjednavkaDreva() {
     return (
         <div>
 
-            <NavbarAbove />
+            <div className='hidden sm:block'>
+                <NavbarAbove />
+            </div>
 
             <NewNavbar />
 
