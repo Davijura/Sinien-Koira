@@ -29,10 +29,10 @@ export default function Navbar() {
             <div className="drawer-content">
                 <div className={`navbar flex justify-between h-28 lg:px-24 px-10 z-20 fixed w-screen ${atTop ? 'bg-transparent' : ''}`}
                     style={atTop ? {} : { background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)', opacity: 0.9 }}>
-                    <div className="navbar-start ">    
-                            <Link href="/">
-                                <p className='text-3xl font-bold whitespace-nowrap lg:text-4xl md:text-3xl '>Sinien Koira</p>
-                            </Link>
+                    <div className="navbar-start ">
+                        <Link href="/">
+                            <p className='text-3xl font-bold whitespace-nowrap lg:text-4xl md:text-3xl '>Sinien Koira</p>
+                        </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">
                         <ul className="menu menu-horizontal px-1 text-blue-white font-bold text-xl">
@@ -55,30 +55,33 @@ export default function Navbar() {
 
             <div className="drawer-side h-screen lg:hidden z-50">
                 <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-                <ul className="menu p-4 pt-8 min-h-screen bg-base-200 text-2xl font-semibold text-green-600" style={{
-                    background: 'linear-gradient(135deg, #ece9e6, #ffffff)',
-                    transition: 'all 0.3s ease-in-out',
-                    boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
-                }}>
+                <ul className="menu p-4 pt-8 min-h-screen bg-white text-2xl font-semibold text-green-600"
+                    style={{
+                        transition: 'all 0.3s ease-in-out',
+                        boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
+                    }}>
+                    <Link href="/"><img className="w-28 h-28 mb-5 mx-auto rounded-xl" src="/logo.png" alt="Work"/></Link>
+                    <hr className="border-black mb-5" />
                     <Link href="/#about-section">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>O nás</button>
                     </Link>
-                    <hr className="border-black" />
+
                     <Link href="/gallery">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Galerie</button>
                     </Link>
-                    <hr className="border-black" />
+
                     <Link href="/our-services">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Naše služby</button>
                     </Link>
-                    <hr className="border-black" />
+
                     <Link href="/objednavka-dreva">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Objednávka dřeva</button>
                     </Link>
-                    <hr className="border-black" />
+
                     <Link href="/contact">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Kontakt</button>
                     </Link>
+
                 </ul>
             </div>
         </div>

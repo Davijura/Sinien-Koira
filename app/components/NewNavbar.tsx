@@ -35,30 +35,33 @@ export default function Navbar() {
 
             <div className="drawer-side h-screen lg:hidden z-50">
                 <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
-                <ul className="menu p-4 pt-8 min-h-screen bg-base-200 text-2xl font-semibold text-green-600" style={{
-                    background: 'linear-gradient(135deg, #ece9e6, #ffffff)',
-                    transition: 'all 0.3s ease-in-out',
-                    boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
-                }}>
+                <ul className="menu p-4 pt-8 min-h-screen bg-white text-2xl font-semibold text-green-600"
+                    style={{
+                        transition: 'all 0.3s ease-in-out',
+                        boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
+                    }}>
+                    <Link href="/"><img className="w-28 h-28 mb-5 mx-auto rounded-xl" src="/logo.png" alt="Work"/></Link>
+                    <hr className="border-black mb-5" />
                     <Link href="/#about-section">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>O nás</button>
                     </Link>
-                    <hr className="border-black" />
+
                     <Link href="/gallery">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Galerie</button>
                     </Link>
-                    <hr className="border-black" />
+
                     <Link href="/our-services">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Naše služby</button>
                     </Link>
-                    <hr className="border-black" />
+
                     <Link href="/objednavka-dreva">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Objednávka dřeva</button>
                     </Link>
-                    <hr className="border-black" />
+
                     <Link href="/contact">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Kontakt</button>
                     </Link>
+
                 </ul>
             </div>
         </div>
