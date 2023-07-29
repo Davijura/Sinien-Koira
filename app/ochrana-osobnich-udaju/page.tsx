@@ -1,10 +1,10 @@
 'use client'
-import NewNavbar from '../components/NewNavbar';
-import NavbarAbove from '../components/NavbarAbove';
-import PrivacyPage from '../components/PrivacyPage';
+import NewNavbar from '../components/NewNavbar'
+import NavbarAbove from '../components/NavbarAbove'
+import PrivacyPage from '../components/PrivacyPage'
 
-export default function OurServices() {
-    return (
+export default function OurServices (): any {
+  return (
         <div>
 
             <div className='hidden sm:block'>
@@ -17,5 +17,5 @@ export default function OurServices() {
 
         </div>
 
-    );
+  )
 }

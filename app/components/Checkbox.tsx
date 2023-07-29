@@ -1,14 +1,14 @@
-import Link from 'next/link';
-import { ChangeEvent } from 'react';
+import Link from 'next/link'
+import { type ChangeEvent } from 'react'
 
 interface CheckboxProps {
-    isChecked: boolean;
-    onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  isChecked: boolean
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
-export default function Checkbox({ isChecked, onChange }: CheckboxProps) {
-    return (
-        
+export default function Checkbox ({ isChecked, onChange }: CheckboxProps): any {
+  return (
+
         <div className="form-control flex flex-col items-center justify-center sm:flex-row sm:items-center sm:justify-between pt-5">
             <label className="label cursor-pointer flex items-center space-x-3  mb-5 sm:mb-0">
                 <input type="checkbox" checked={isChecked} onChange={onChange} className="text-blue-500 checkbox bg-white" />
@@ -16,5 +16,5 @@ export default function Checkbox({ isChecked, onChange }: CheckboxProps) {
             </label>
             <button type="submit" disabled={!isChecked} className="btn bg-green-500 border-none text-white" role="button" aria-disabled="true">Vytvořit poptávku</button>
         </div>
-    );
+  )
 }

@@ -1,11 +1,12 @@
+import Image from 'next/image'
 
-export default function Footer() {
-    return (
+export default function Footer (): any {
+  return (
         <footer className="footer footer-center p-10 bg-primary text-primary-content" style={{
-            background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)',
+          background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)'
         }}>
             <div>
-                <img className='mask mask-circle' width="50" height="50" src='/logo.png'></img>
+                <Image className='mask mask-circle' width="50" height="50" alt="logo" src='/logo.png'></Image>
                 <p className="font-bold">
                     Sinien Koira, s. r. o. <br />Providing reliable tech since 1992
                 </p>
@@ -18,5 +19,5 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
-    )
+  )
 }

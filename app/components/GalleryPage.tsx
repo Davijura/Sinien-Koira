@@ -1,12 +1,12 @@
-import React from 'react';
-import GalleryImages from './GalleryImages';
-import { motion } from 'framer-motion';
+import React from 'react'
+import GalleryImages from './GalleryImages'
+import { motion } from 'framer-motion'
 
-type GalleryImage = {
-  id: string;
-  src: string;
-  alt: string;
-};
+interface GalleryImage {
+  id: string
+  src: string
+  alt: string
+}
 
 const images: GalleryImage[] = [
   { id: '1', src: '/woodG.jpg', alt: 'Dřevo na vlečce' },
@@ -20,11 +20,11 @@ const images: GalleryImage[] = [
   { id: '9', src: '/tree.jpg', alt: 'Popis obrázku 1' },
   { id: '10', src: '/root.jpg', alt: 'Popis obrázku 1' },
   { id: '11', src: '/tractor.jpg', alt: 'Popis obrázku 1' },
-  { id: '12', src: '/woodBlock.jpg', alt: 'Popis obrázku 1' },
+  { id: '12', src: '/woodBlock.jpg', alt: 'Popis obrázku 1' }
   // přidej další obrázky podle potřeby
-];
+]
 
-export default function GalleryPage() {
+export default function GalleryPage (): any {
   return (
     <div className="bg-gray-100 items-center justify-center min-h-screen pb-40">
       <div className='mx-auto justify-center text-black items-center flex'>
@@ -37,5 +37,5 @@ export default function GalleryPage() {
 
       <GalleryImages images={images} />
     </div>
-  );
+  )
 }

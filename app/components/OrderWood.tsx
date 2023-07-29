@@ -1,29 +1,27 @@
-import { ChangeEvent } from 'react';
+import { type ChangeEvent } from 'react'
 
-interface IQuantities {
-    [key: string]: number;
-}
+type IQuantities = Record<string, number>
 
 interface IOrderWoodProps {
-    prices: { [key: string]: number };
-    quantities: IQuantities;
-    onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+  prices: Record<string, number>
+  quantities: IQuantities
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
 const OrderWood: React.FC<IOrderWoodProps> = ({ prices, quantities, onChange }) => {
-    const hardWoodKeys = ['hard_wood_100', 'hard_wood_50', 'hard_wood_33'];
-    const softWoodKeys = ['soft_wood_100', 'soft_wood_50', 'soft_wood_33'];
+  const hardWoodKeys = ['hard_wood_100', 'hard_wood_50', 'hard_wood_33']
+  const softWoodKeys = ['soft_wood_100', 'soft_wood_50', 'soft_wood_33']
 
-    const labels: { [key: string]: string } = {
-        'hard_wood_100': 'Štípaná polena 100 cm',
-        'hard_wood_50': 'Štípaná polínka 50 cm',
-        'hard_wood_33': 'Štípaná polínka 33 cm',
-        'soft_wood_100': 'Štípaná polena 100 cm',
-        'soft_wood_50': 'Štípaná polínka 50 cm',
-        'soft_wood_33': 'Štípaná polínka 33 cm'
-    }
+  const labels: Record<string, string> = {
+    hard_wood_100: 'Štípaná polena 100 cm',
+    hard_wood_50: 'Štípaná polínka 50 cm',
+    hard_wood_33: 'Štípaná polínka 33 cm',
+    soft_wood_100: 'Štípaná polena 100 cm',
+    soft_wood_50: 'Štípaná polínka 50 cm',
+    soft_wood_33: 'Štípaná polínka 33 cm'
+  }
 
-    return (
+  return (
         <div className="flex flex-wrap -mx-2">
             <div className="w-full lg:w-1/2 px-2">
                 <h2 className="block text-black text-lg font-bold mb-4">TVRDÉ PALIVOVÉ DŘEVO</h2>
@@ -65,8 +63,7 @@ const OrderWood: React.FC<IOrderWoodProps> = ({ prices, quantities, onChange }) 
             </div>
         </div>
 
+  )
+}
 
-    );
-};
-
-export default OrderWood;
+export default OrderWood

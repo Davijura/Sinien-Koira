@@ -1,7 +1,7 @@
-import { motion } from 'framer-motion';
-import ServiceCard from './ServiceCard';
+import { motion } from 'framer-motion'
+import ServiceCard from './ServiceCard'
 
-export default function ServicePage() {
+export default function ServicePage (): any {
   return (
 
     <div className="bg-white items-center justify-center min-h-screen pb-40">
@@ -18,5 +18,5 @@ export default function ServicePage() {
       </div>
     </div>
 
-  );
+  )
 }

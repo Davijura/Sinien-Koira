@@ -1,6 +1,7 @@
+import Image from 'next/image'
 
-export default function AboutInfoSecond() {
-    return (
+export default function AboutInfoSecond (): any {
+  return (
         <div className="grid grid-cols-1 mx-auto md:grid-cols-2 gap-20 pb-28 items-center justify-items-center px-4 md:px-0 max-w-max">
 
             <div className="md:order-2 max-w-[450px]">
@@ -11,9 +12,9 @@ export default function AboutInfoSecond() {
             </div>
 
             <div className="md:order-1 h-[370px] max-w-[500px] sm:h-[370px]">
-                <img className="w-full h-full object-cover rounded-xl" src="/work.jpg" alt="Work" />
+                <Image width={900} height={370} className="w-full h-full object-cover rounded-xl" src="/work.jpg" alt="Work" />
             </div>
 
         </div>
-    )
+  )
 }

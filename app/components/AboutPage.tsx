@@ -1,40 +1,40 @@
-import { useState, useEffect } from "react";
-import { motion } from "framer-motion";
-import { useInView } from 'react-intersection-observer';
-import AboutInfo from './AboutInfo';
-import AboutInfoSecond from './AboutInfoSecond';
-import AboutInfoThird from './AboutInfoThird';
+import { useState, useEffect } from 'react'
+import { motion } from 'framer-motion'
+import { useInView } from 'react-intersection-observer'
+import AboutInfo from './AboutInfo'
+import AboutInfoSecond from './AboutInfoSecond'
+import AboutInfoThird from './AboutInfoThird'
 
-export default function AboutPage() {
-    const [animated1, setAnimated1] = useState(false);
-    const [animated2, setAnimated2] = useState(false);
-    const [animated3, setAnimated3] = useState(false);
+export default function AboutPage (): any {
+  const [animated1, setAnimated1] = useState(false)
+  const [animated2, setAnimated2] = useState(false)
+  const [animated3, setAnimated3] = useState(false)
 
-    const { ref: ref1, inView: inView1 } = useInView({
-        threshold: 0.1,
-    });
+  const { ref: ref1, inView: inView1 } = useInView({
+    threshold: 0.1
+  })
 
-    const { ref: ref2, inView: inView2 } = useInView({
-        threshold: 0.1,
-    });
+  const { ref: ref2, inView: inView2 } = useInView({
+    threshold: 0.1
+  })
 
-    const { ref: ref3, inView: inView3 } = useInView({
-        threshold: 0.1,
-    });
+  const { ref: ref3, inView: inView3 } = useInView({
+    threshold: 0.1
+  })
 
-    useEffect(() => {
-        if (inView1) setAnimated1(true);
-    }, [inView1]);
+  useEffect(() => {
+    if (inView1) setAnimated1(true)
+  }, [inView1])
 
-    useEffect(() => {
-        if (inView2) setAnimated2(true);
-    }, [inView2]);
+  useEffect(() => {
+    if (inView2) setAnimated2(true)
+  }, [inView2])
 
-    useEffect(() => {
-        if (inView3) setAnimated3(true);
-    }, [inView3]);
+  useEffect(() => {
+    if (inView3) setAnimated3(true)
+  }, [inView3])
 
-    return (
+  return (
         <section className="bg-white items-center justify-center min-h-screen py-20" id="about-section">
 
             <div className='container mx-auto'>
@@ -62,5 +62,5 @@ export default function AboutPage() {
             </div>
 
         </section>
-    );
+  )
 }

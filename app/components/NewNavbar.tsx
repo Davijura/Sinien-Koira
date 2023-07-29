@@ -1,15 +1,15 @@
-import Link from 'next/link';
+import Link from 'next/link'
+import Image from 'next/image'
 
-export default function Navbar() {
-
-    return (
+export default function Navbar (): any {
+  return (
         <div className="drawer " >
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
                 <div className="navbar flex w-full justify-between h-24 lg:px-24 px-10"
                     style={{
-                        background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)',
+                      background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)'
                     }}>
                     <div className="navbar-start">
                         <Link href="/">
@@ -37,10 +37,10 @@ export default function Navbar() {
                 <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
                 <ul className="menu p-4 pt-8 min-h-screen bg-white text-2xl font-semibold text-green-600"
                     style={{
-                        transition: 'all 0.3s ease-in-out',
-                        boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
+                      transition: 'all 0.3s ease-in-out',
+                      boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
                     }}>
-                    <Link href="/"><img className="w-28 h-28 mb-5 mx-auto rounded-xl" src="/logo.png" alt="Work"/></Link>
+                    <Link href="/"><Image className="mb-5 mx-auto rounded-xl" width={112} height={112} src="/logo.png" alt="Logo"/></Link>
                     <hr className="border-black mb-5" />
                     <Link href="/#about-section">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>O nás</button>
@@ -65,5 +65,5 @@ export default function Navbar() {
                 </ul>
             </div>
         </div>
-    )
+  )
 }

@@ -1,19 +1,19 @@
-import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
-import useWindowSize from '../hooks/useWindowSize';
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api'
+import useWindowSize from '../hooks/useWindowSize'
 
 const defaultCenter = {
-    lat: 49.5198605, lng: 17.0856296
+  lat: 49.5198605, lng: 17.0856296
 }
 
-export default function ContactMap() {
-    const size = useWindowSize();
+export default function ContactMap (): any {
+  const size = useWindowSize()
 
-    const mapStyles = {
-        height: "400px",
-        width: size.width ? (size.width <= 820 ? `${size.width}px` : "800px") : "800px"
-    };
+  const mapStyles = {
+    height: '400px',
+    width: (size.width != null) ? (size.width <= 820 ? `${size.width}px` : '800px') : '800px'
+  }
 
-    return (
+  return (
         <div className='mx-auto items-center pt-10' style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
             <div className='items-center text-black'>
                 <div>
@@ -28,5 +28,5 @@ export default function ContactMap() {
                 </div>
             </div>
         </div>
-    )
+  )
 }

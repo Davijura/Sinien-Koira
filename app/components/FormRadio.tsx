@@ -1,16 +1,16 @@
 import { useState } from 'react'
 
-export default function FormRadio({ setIsDeliverySelected }: { setIsDeliverySelected: (isDeliverySelected: boolean) => void }) {
-    const [selectedOption, setSelectedOption] = useState('');
-    const [isDeliveryOptionSelected, setDeliveryOptionSelected] = useState(false);
+export default function FormRadio ({ setIsDeliverySelected }: { setIsDeliverySelected: (isDeliverySelected: boolean) => void }): any {
+  const [selectedOption, setSelectedOption] = useState('')
+  const [, setDeliveryOptionSelected] = useState(false)
 
-    const handleRadioChange = (e: { target: { value: React.SetStateAction<string>; }; }) => {
-        setSelectedOption(e.target.value);
-        setDeliveryOptionSelected(e.target.value === 'Zajistit dopravu');
-        setIsDeliverySelected(e.target.value === 'Zajistit dopravu');
-    }
+  const handleRadioChange = (e: { target: { value: React.SetStateAction<string> } }): any => {
+    setSelectedOption(e.target.value)
+    setDeliveryOptionSelected(e.target.value === 'Zajistit dopravu')
+    setIsDeliverySelected(e.target.value === 'Zajistit dopravu')
+  }
 
-    return (
+  return (
         <div className='flex flex-col items-center text-black'>
             <div className='flex flex-row justify-center gap-10'>
                 <label className='flex items-center'>
@@ -31,5 +31,5 @@ export default function FormRadio({ setIsDeliverySelected }: { setIsDeliverySele
                 <p className="mt-4">Adresa pro vyzvednutí dřeva je v kontaktech</p>
             )}
         </div>
-    )
+  )
 }

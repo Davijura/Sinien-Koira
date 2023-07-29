@@ -1,6 +1,7 @@
+import Image from 'next/image'
 
-export default function AboutInfo() {
-    return (
+export default function AboutInfo (): any {
+  return (
         <div className="grid grid-cols-1 mx-auto md:grid-cols-2 gap-20 pb-24 items-center justify-items-center px-4 md:px-0 max-w-max">
 
             <div className="md:order-1 max-w-[450px]">
@@ -11,9 +12,9 @@ export default function AboutInfo() {
             </div>
 
             <div className="md:order-2 max-w-[500px] h-[370px]">
-                <img className="w-full h-full object-cover rounded-xl" src="/redTractor.jpg" alt="Tractor" />
+                <Image width={500} height={370} className="w-full h-full object-cover rounded-xl" src="/redTractor.jpg" alt="Tractor" />
             </div>
 
         </div>
-    )
+  )
 }

@@ -1,54 +1,52 @@
-import { FormEvent, useState } from 'react';
-import { motion } from 'framer-motion';
-import emailjs from '@emailjs/browser';
-import OrderWood from './OrderWood';
-import OrderInfo from './OrderInfo';
-import Checkbox from './Checkbox';
-import { useOrderForm } from '../hooks/useOrderForm';
-import FormRadio from './FormRadio';
+import { type FormEvent, useState } from 'react'
+import { motion } from 'framer-motion'
+import emailjs from '@emailjs/browser'
+import OrderWood from './OrderWood'
+import OrderInfo from './OrderInfo'
+import Checkbox from './Checkbox'
+import { useOrderForm } from '../hooks/useOrderForm'
+import FormRadio from './FormRadio'
 
-export default function OrderForm() {
+export default function OrderForm (): any {
   const {
-    
-    isFormSubmitted, setFormSubmitted, isAgreementChecked, setAgreementChecked, form,
-    total, prices, quantities, setQuantities, personalData, setPersonalData,
+
+    isFormSubmitted, setFormSubmitted, isAgreementChecked, form,
+    total, prices, quantities, personalData,
     handlePersonalDataChange, handleAgreementChange, handleChange, resetForm
-  } = useOrderForm();
+  } = useOrderForm()
 
-  const [isDeliverySelected, setIsDeliverySelected] = useState(false);
+  const [isDeliverySelected, setIsDeliverySelected] = useState(false)
 
-  const sendEmail = (e: FormEvent) => {
-    e.preventDefault();
+  const sendEmail = (e: FormEvent): any => {
+    e.preventDefault()
 
-    if (!isAgreementChecked) {
-      setFormSubmitted(true);
-      return;
+    if (!(isAgreementChecked)) {
+      setFormSubmitted(true)
+      return
     }
 
-    if (form.current) {
+    if (form.current != null) {
       const templateParams = {
         total: total.toString(),
         ...personalData,
-        ...quantities,
-      };
+        ...quantities
+      }
 
-      emailjs.send('service_1rbe336', 'template_1h6g1q2', {...templateParams, isDeliverySelected}, 'yeWCwgC2fF2o2kGVV')
+      emailjs.send('service_1rbe336', 'template_1h6g1q2', { ...templateParams, isDeliverySelected }, 'yeWCwgC2fF2o2kGVV')
         .then((result) => {
-          console.log(result.text);
+          console.log(result.text)
           setFormSubmitted(true)
-          resetForm();
+          resetForm()
         }, (error) => {
-          console.log(error.text);
-        });
-
+          console.log(error.text)
+        })
     }
-
-  };
+  }
 
   const variants = {
     hidden: { opacity: 0, x: '100vw' },
-    visible: { opacity: 1, x: 0 },
-  };
+    visible: { opacity: 1, x: 0 }
+  }
 
   return (
     <div className="flex justify-center">
@@ -73,7 +71,7 @@ export default function OrderForm() {
         <Checkbox isChecked={isAgreementChecked} onChange={handleAgreementChange} />
 
       </form>
-      {isFormSubmitted && (
+      {(Boolean(isFormSubmitted)) && (
         <motion.div
           className="toast toast-end"
           variants={variants}
@@ -90,5 +88,5 @@ export default function OrderForm() {
         </motion.div>
       )}
     </div>
-  );
+  )
 };

@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import PrivacyTxt from './PrivacyTxt';
+import { motion } from 'framer-motion'
+import PrivacyTxt from './PrivacyTxt'
 
-export default function ServicePage() {
-    return (
+export default function ServicePage (): any {
+  return (
 
         <div className="bg-white items-center justify-center min-h-screen pb-40">
             <div className='container mx-auto'>
@@ -18,5 +18,5 @@ export default function ServicePage() {
             </div>
         </div>
 
-    );
+  )
 }

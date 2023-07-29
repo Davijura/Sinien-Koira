@@ -1,7 +1,7 @@
 import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
 
-export default function ContactInfo() {
-    return (
+export default function ContactInfo (): any {
+  return (
         <div className='flex flex-col sm:flex-row justify-between mx-auto items-start sm:items-center w-full sm:w-[550px] text-black px-4 sm:px-0'>
 
             <div className='mb-4 sm:mb-0'>
@@ -25,5 +25,5 @@ export default function ContactInfo() {
             </div>
 
         </div>
-    );
+  )
 }

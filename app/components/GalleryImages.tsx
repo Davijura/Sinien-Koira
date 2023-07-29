@@ -1,27 +1,28 @@
-import { useState } from 'react';
-import { motion } from 'framer-motion';
+import { useState } from 'react'
+import { motion } from 'framer-motion'
+// import Image from 'next/image'
 
-type GalleryImage = {
-  id: string;
-  src: string;
-  alt: string;
-};
+interface GalleryImage {
+  id: string
+  src: string
+  alt: string
+}
 
-type GalleryImagesProps = {
-  images: GalleryImage[];
-};
+interface GalleryImagesProps {
+  images: GalleryImage[]
+}
 
 const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
-  const [activeImage, setActiveImage] = useState<string | null>(null);
-  const [selectedImg, setSelectedImg] = useState<string | null>(null);
+  const [activeImage, setActiveImage] = useState<string | null>(null)
+  const [selectedImg, setSelectedImg] = useState<string | null>(null)
 
-  const handleOpen = (src: string) => {
-    setSelectedImg(src);
-  };
+  const handleOpen = (src: string): any => {
+    setSelectedImg(src)
+  }
 
-  const handleClose = () => {
-    setSelectedImg(null);
-  };
+  const handleClose = (): any => {
+    setSelectedImg(null)
+  }
 
   return (
     <div className="grid grid-cols-1 pb-10 min-h-screen w-max mx-auto sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-10 justify-items-center">
@@ -29,9 +30,9 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
         <div
           key={image.id}
           className="relative overflow-hidden shadow-lg rounded-lg cursor-pointer hover:shadow-2xl transition duration-500 w-80 h-80 sm:w-96 sm:h-96"
-          onMouseEnter={() => setActiveImage(image.id)}
-          onMouseLeave={() => setActiveImage(null)}
-          onClick={() => handleOpen(image.src)}
+          onMouseEnter={() => { setActiveImage(image.id) }}
+          onMouseLeave={() => { setActiveImage(null) }}
+          onClick={() => { handleOpen(image.src) }}
         >
           <img
             className="absolute inset-0 object-cover object-center w-full h-full"
@@ -51,7 +52,7 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
         </div>
       ))}
 
-      {selectedImg && (
+      {(selectedImg != null) && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -77,8 +78,8 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
             whileHover={{ scale: 1.2 }}
             whileTap={{ scale: 0.8 }}
             onClick={(e) => {
-              e.stopPropagation();
-              handleClose();
+              e.stopPropagation()
+              handleClose()
             }}
           >
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10">
@@ -88,7 +89,7 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
         </motion.div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default GalleryImages;
+export default GalleryImages

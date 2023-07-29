@@ -1,10 +1,10 @@
 'use client'
-import React from 'react';
-import HomeHead from "./components/HomeHead";
-import Navbar from './components/Navbar';
-import AboutPage from './components/AboutPage';
+import React from 'react'
+import HomeHead from './components/HomeHead'
+import Navbar from './components/Navbar'
+import AboutPage from './components/AboutPage'
 
-export default function Home() {
+export default function Home (): any {
   return (
     <div>
 
@@ -15,5 +15,5 @@ export default function Home() {
       <AboutPage />
 
     </div>
-  );
+  )
 }

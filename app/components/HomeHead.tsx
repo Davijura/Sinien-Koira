@@ -1,29 +1,29 @@
-import { CSSProperties } from 'react';
-import { motion } from 'framer-motion';
-import Link from 'next/link';
+import { type CSSProperties } from 'react'
+import { motion } from 'framer-motion'
+import Link from 'next/link'
 
-export default function HomeHead() {
-    const bgStyle: CSSProperties = {
-        backgroundImage: 'url(/woods2.jpg)',
-        backgroundRepeat: 'no-repeat',
-        overflow: 'hidden',
+export default function HomeHead (): any {
+  const bgStyle: CSSProperties = {
+    backgroundImage: 'url(/woods2.jpg)',
+    backgroundRepeat: 'no-repeat',
+    overflow: 'hidden'
+  }
+
+  const overlayStyle: CSSProperties = {
+    height: '100%',
+    width: '100%',
+    backgroundColor: 'rgba(0,0,0,0.5)'
+  }
+
+  const handleBouncerClick = (): any => {
+    const element = document.getElementById('about-section')
+
+    if (element != null) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' })
     }
+  }
 
-    const overlayStyle: CSSProperties = {
-        height: '100%',
-        width: '100%',
-        backgroundColor: 'rgba(0,0,0,0.5)'
-    }
-
-    const handleBouncerClick = () => {
-        const element = document.getElementById('about-section');
-    
-        if (element) {
-            element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
-    };
-
-    return (
+  return (
         <div className="hero bg-white min-h-screen relative" style={bgStyle}>
             <div style={overlayStyle} />
 
@@ -35,7 +35,6 @@ export default function HomeHead() {
                             Odborné  <span className="font-bold text-green-600">lesnictví</span> a  <span className="font-bold text-green-600">výsadba stromů</span> pro lepší budoucnost
                         </h1>
                         <p className="py-6 text-xl text-white font-bold">Nabízíme kvalitní palivové dříví</p>
-
 
                         <div className="flex flex-row gap-4 justify-left">
                             <Link href="/our-services">
@@ -50,7 +49,6 @@ export default function HomeHead() {
                             </Link>
                         </div>
 
-
                     </div>
                 </div>
 
@@ -63,5 +61,5 @@ export default function HomeHead() {
             </div>
 
         </div>
-    );
+  )
 }

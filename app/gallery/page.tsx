@@ -1,9 +1,9 @@
 'use client'
-import NewNavbar from '../components/NewNavbar';
-import GalleryPage from '../components/GalleryPage';
-import NavbarAbove from '../components/NavbarAbove';
+import NewNavbar from '../components/NewNavbar'
+import GalleryPage from '../components/GalleryPage'
+import NavbarAbove from '../components/NavbarAbove'
 
-export default function Gallery() {
+export default function Gallery (): any {
   return (
     <div>
 
@@ -17,5 +17,5 @@ export default function Gallery() {
 
     </div>
 
-  );
+  )
 }

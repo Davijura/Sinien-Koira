@@ -1,7 +1,7 @@
-import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi';
+import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
 
-export default function NavbarAbove() {
-    return (
+export default function NavbarAbove (): any {
+  return (
         <div className="flex items-center bg-gray-800 h-12 justify-center md:justify-end  lg:px-32 md:px-14 px-8 ">
             <div className="">
                 <ul className="flex justify-between gap-5 text-white font-bold text-sm">
@@ -16,5 +16,5 @@ export default function NavbarAbove() {
                 </ul>
             </div>
         </div>
-    )
+  )
 }

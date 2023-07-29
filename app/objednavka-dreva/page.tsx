@@ -1,10 +1,10 @@
 'use client'
-import NewNavbar from '../components/NewNavbar';
-import OrderPage from '../components/OrderPage';
-import NavbarAbove from '../components/NavbarAbove';
+import NewNavbar from '../components/NewNavbar'
+import OrderPage from '../components/OrderPage'
+import NavbarAbove from '../components/NavbarAbove'
 
-export default function ObjednavkaDreva() {
-    return (
+export default function ObjednavkaDreva (): any {
+  return (
         <div>
 
             <div className='hidden sm:block'>
@@ -17,5 +17,5 @@ export default function ObjednavkaDreva() {
 
         </div>
 
-    );
+  )
 }

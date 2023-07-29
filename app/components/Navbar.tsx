@@ -1,30 +1,31 @@
-import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import Link from 'next/link'
+import Image from 'next/image'
+import { useState, useEffect } from 'react'
 
-export default function Navbar() {
-    const [drawerOpen, setDrawerOpen] = useState(false);
-    const [atTop, setAtTop] = useState(true);
+export default function Navbar (): any {
+  const [drawerOpen, setDrawerOpen] = useState(false)
+  const [atTop, setAtTop] = useState(true)
 
-    useEffect(() => {
-        const handleScroll = () => {
-            const isAtTop = window.scrollY < 50;
-            if (isAtTop !== atTop) {
-                setAtTop(isAtTop);
-            }
-        };
+  useEffect(() => {
+    const handleScroll = (): any => {
+      const isAtTop = window.scrollY < 50
+      if (isAtTop !== atTop) {
+        setAtTop(isAtTop)
+      }
+    }
 
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [atTop]);
+    window.addEventListener('scroll', handleScroll)
+    return () => {
+      window.removeEventListener('scroll', handleScroll)
+    }
+  }, [atTop])
 
-    const toggleDrawer = () => {
-        setDrawerOpen(!drawerOpen);
-    };
+  const toggleDrawer = (): any => {
+    setDrawerOpen(!drawerOpen)
+  }
 
-    return (
-        <div className={`drawer z-10`}>
+  return (
+        <div className={'drawer z-10'}>
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" checked={drawerOpen} onChange={toggleDrawer} />
             <div className="drawer-content">
                 <div className={`navbar flex justify-between h-28 lg:px-24 px-10 z-20 fixed w-screen ${atTop ? 'bg-transparent' : ''}`}
@@ -57,10 +58,10 @@ export default function Navbar() {
                 <label htmlFor="my-drawer-3" className="drawer-overlay"></label>
                 <ul className="menu p-4 pt-8 min-h-screen bg-white text-2xl font-semibold text-green-600"
                     style={{
-                        transition: 'all 0.3s ease-in-out',
-                        boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
+                      transition: 'all 0.3s ease-in-out',
+                      boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
                     }}>
-                    <Link href="/"><img className="w-28 h-28 mb-5 mx-auto rounded-xl" src="/logo.png" alt="Work"/></Link>
+                    <Link href="/"><Image className="mb-5 mx-auto rounded-xl" width={112} height={112} src="/logo.png" alt="Logo"/></Link>
                     <hr className="border-black mb-5" />
                     <Link href="/#about-section">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>O nás</button>
@@ -85,5 +86,5 @@ export default function Navbar() {
                 </ul>
             </div>
         </div>
-    )
+  )
 }

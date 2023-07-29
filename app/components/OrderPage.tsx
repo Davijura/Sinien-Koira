@@ -1,8 +1,8 @@
-import { motion } from 'framer-motion';
-import OrderForm from './OrderForm';
+import { motion } from 'framer-motion'
+import OrderForm from './OrderForm'
 
-export default function OrderPage() {
-    return (
+export default function OrderPage (): any {
+  return (
 
         <div className="bg-white items-center justify-center min-h-screen pb-40">
             <div className='container mx-auto'>
@@ -14,9 +14,9 @@ export default function OrderPage() {
                     </motion.div>
 
                 </div>
-                <OrderForm  />
+                <OrderForm />
             </div>
         </div>
 
-    );
+  )
 }

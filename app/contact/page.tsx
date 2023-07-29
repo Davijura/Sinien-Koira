@@ -1,10 +1,10 @@
 'use client'
-import NewNavbar from '../components/NewNavbar';
-import ContactPage from '../components/ContactPage';
-import NavbarAbove from '../components/NavbarAbove';
+import NewNavbar from '../components/NewNavbar'
+import ContactPage from '../components/ContactPage'
+import NavbarAbove from '../components/NavbarAbove'
 
-export default function Contact() {
-    return (
+export default function Contact (): any {
+  return (
         <div>
 
             <div className='hidden sm:block'>
@@ -17,5 +17,5 @@ export default function Contact() {
 
         </div>
 
-    );
+  )
 }
