@@ -10,6 +10,7 @@ export default function ContactMap (): any {
 
   const mapStyles = {
     height: '400px',
+    // eslint-disable-next-line @typescript-eslint/restrict-template-expressions
     width: (size.width != null) ? (size.width <= 820 ? `${size.width}px` : '800px') : '800px'
   }
 

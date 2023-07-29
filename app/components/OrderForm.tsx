@@ -20,6 +20,7 @@ export default function OrderForm (): any {
   const sendEmail = (e: FormEvent): any => {
     e.preventDefault()
 
+    // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
     if (!(isAgreementChecked)) {
       setFormSubmitted(true)
       return

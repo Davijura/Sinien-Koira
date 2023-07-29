@@ -1,8 +1,10 @@
+import Image from 'next/image'
+
 export default function ServiceCard (): any {
   return (
         <div className='flex flex-col md:flex-row items-center mx-auto justify-center gap-10 text-black pb-12'>
             <div className="card w-[450px] h-[550px] bg-white shadow-xl">
-                <figure><img src="/tree.jpg" alt="Shoes" /></figure>
+                <figure><Image width={450} height={550} src="/tree.jpg" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
                         Prodej dřeva
@@ -12,7 +14,7 @@ export default function ServiceCard (): any {
             </div>
 
             <div className="card w-[450px] h-[550px] bg-white shadow-xl">
-                <figure><img src="/tree.jpg" alt="Shoes" /></figure>
+                <figure><Image width={450} height={550} src="/tree.jpg" alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title">
                         Naše služby
