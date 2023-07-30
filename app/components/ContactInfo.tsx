@@ -18,6 +18,14 @@ export default function ContactInfo (): any {
             </div>
 
             <div>
+                <h2 className="font-bold">Fakturační adresa:</h2>
+                <p>Jaurisova 515/4</p>
+                <p>140 00 Praha 4</p>
+                <p>IČ: 11980389</p>
+                <p>DIČ: CZ11980389</p>
+            </div>
+
+            <div className='relative bottom-3 pt-5 sm:pt-0'>
                 <h2 className="font-bold">Prodejna dřeva:</h2>
                 <p>Pod Kosířem 333</p>
                 <p>798 16 Čelechovice </p>

@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import { useState } from 'react'
 import { motion } from 'framer-motion'
-// import Image from 'next/image'
 
 interface GalleryImage {
   id: string
@@ -14,7 +13,6 @@ interface GalleryImagesProps {
 }
 
 const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
-  const [activeImage, setActiveImage] = useState<string | null>(null)
   const [selectedImg, setSelectedImg] = useState<string | null>(null)
 
   const handleOpen = (src: string): any => {
@@ -30,9 +28,7 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
       {images.map((image) => (
         <div
           key={image.id}
-          className="relative overflow-hidden shadow-lg rounded-lg cursor-pointer hover:shadow-2xl transition duration-500 w-80 h-80 sm:w-96 sm:h-96"
-          onMouseEnter={() => { setActiveImage(image.id) }}
-          onMouseLeave={() => { setActiveImage(null) }}
+          className="relative overflow-hidden shadow-xl rounded-lg cursor-pointer hover:shadow-2xl transition duration-500 w-80 h-80 sm:w-96 sm:h-96"
           onClick={() => { handleOpen(image.src) }}
         >
           <img
@@ -42,14 +38,6 @@ const GalleryImages: React.FC<GalleryImagesProps> = ({ images }) => {
             loading="lazy"
           />
 
-          <div
-            className={`absolute bottom-0 left-0 bg-gray-200 bg-opacity-70 w-full transform transition-all duration-500 overflow-hidden p-2 ${activeImage === image.id ? 'translate-y-0' : 'translate-y-full'
-              }`}
-          >
-            <p className="text-black text-sm md:text-md font-medium">
-              {image.alt}
-            </p>
-          </div>
         </div>
       ))}
 

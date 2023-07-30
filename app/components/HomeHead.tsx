@@ -37,9 +37,9 @@ export default function HomeHead (): any {
                         <p className="py-6 text-xl text-white font-bold">Nabízíme kvalitní palivové dříví</p>
 
                         <div className="flex flex-row gap-4 justify-left">
-                            <Link href="/our-services">
+                            <Link href="/objednavka-dreva">
                                 <button className="btn btn-primary py-2 hover:bg-green-800 bg-green-600 border-none">
-                                    Naše služby
+                                    Objednávka dřeva
                                 </button>
                             </Link>
                             <Link href="/contact">

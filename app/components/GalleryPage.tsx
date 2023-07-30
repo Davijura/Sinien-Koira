@@ -19,8 +19,8 @@ const images: GalleryImage[] = [
   { id: '8', src: '/smallTrees.jpg', alt: 'Popis obrázku 1' },
   { id: '9', src: '/tree.jpg', alt: 'Popis obrázku 1' },
   { id: '10', src: '/root.jpg', alt: 'Popis obrázku 1' },
-  { id: '11', src: '/tractor.jpg', alt: 'Popis obrázku 1' },
-  { id: '12', src: '/woodBlock.jpg', alt: 'Popis obrázku 1' }
+  { id: '11', src: '/tractor.jpg', alt: 'Traktor' },
+  { id: '12', src: '/tractor_2.jpg', alt: 'Traktor' }
   // přidej další obrázky podle potřeby
 ]
 
@@ -29,7 +29,7 @@ export default function GalleryPage (): any {
     <div className="bg-gray-100 items-center justify-center min-h-screen pb-40">
       <div className='mx-auto justify-center text-black items-center flex'>
         <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
-          <h1 className="text-5xl mb-16 mt-12 border-b-2 border-gray-200 pb-5  sm:text-6xl mx-auto text-center font-bold text-black w-full sm:w-[700px]">
+          <h1 className="text-5xl mb-16 mt-12 border-b-2 border-gray-200 pb-5 sm:text-6xl mx-auto text-center font-bold text-black w-full sm:w-[700px]">
             Galerie
           </h1>
         </motion.div>
