@@ -5,7 +5,7 @@ export default function Footer (): any {
         <footer className="footer items-center p-4 md:px-20 bg-neutral text-white" style={{
           background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)'
         }}>
-        <div className="items-center place-self-center md:place-self-start grid-flow-col">
+        <div className="items-center place-self-center text-center md:place-self-start grid-flow-col">
           <Image src="/logo.png" alt='logo' width="50" height="50" className='hidden md:block mask mask-circle'></Image>
           <p>Sinien Koira, s. r. o. © 2023 - Všechna práva vyhrazena</p>
         </div>
