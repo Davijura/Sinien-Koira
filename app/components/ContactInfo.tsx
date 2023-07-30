@@ -9,12 +9,12 @@ export default function ContactInfo (): any {
                     <HiOutlinePhone className="mr-2" color='green' size={24} />
                     Telefon:
                 </h2>
-                <p className='text-green-600 font-bold'>+420 720 062 090</p>
+                <p className='text-green-600 font-bold'><a href="tel:720062090">+420 720 062 090</a></p>
                 <h2 className="font-bold mt-4 flex items-center">
                     <HiOutlineMail className="mr-2" color='green' size={24} />
                     Email:
                 </h2>
-                <p className='text-green-600 font-bold'>sinienkoira@gmail.com</p>
+                <p className='text-green-600 font-bold'><a href="mailto:sinienkoira@gmail.com">sinienkoira@gmail.com</a></p>
             </div>
 
             <div>

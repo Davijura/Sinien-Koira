@@ -1,4 +1,4 @@
-import Image from 'next/image'
+/* eslint-disable @next/next/no-img-element */
 
 export default function AboutInfo (): any {
   return (
@@ -12,7 +12,7 @@ export default function AboutInfo (): any {
             </div>
 
             <div className="md:order-2 max-w-[500px] h-[370px]">
-                <Image width={500} height={370} className="w-full h-full object-cover rounded-xl" src="/redTractor.jpg" alt="Tractor" />
+                <img width={500} height={370} className="w-full h-full object-cover rounded-xl" src="/redTractor.jpg" alt="Tractor" />
             </div>
 
         </div>

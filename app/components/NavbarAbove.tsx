@@ -11,7 +11,7 @@ export default function NavbarAbove (): any {
                     </li>
                     <li className="flex items-center">
                         <HiOutlinePhone className="text-green-500 mr-2" size={24} />
-                        <a href="tel:720247411">+420 720 062 090</a>
+                        <a href="tel:720062090">+420 720 062 090</a>
                     </li>
                 </ul>
             </div>
