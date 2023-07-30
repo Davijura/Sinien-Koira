@@ -39,7 +39,6 @@ export default function Navbar (): any {
                         <ul className="menu menu-horizontal px-1 text-blue-white font-bold text-xl">
                             <Link href="/#about-section"><button className="btn-lg rounded-xl btn-ghost">O nás</button></Link>
                             <Link href="/gallery"><button className="btn-lg rounded-xl btn-ghost">Galerie</button></Link>
-                            <Link href="/our-services"><button className="btn-lg rounded-xl btn-ghost">Naše služby</button></Link>
                             <Link href="/objednavka-dreva"><button className="btn-lg rounded-xl btn-ghost">Objednávka dřeva</button></Link>
                             <Link href="/contact"><button className="btn-lg rounded-xl btn-ghost">Kontakt</button></Link>
                         </ul>
@@ -69,10 +68,6 @@ export default function Navbar (): any {
 
                     <Link href="/gallery">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Galerie</button>
-                    </Link>
-
-                    <Link href="/our-services">
-                        <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>Naše služby</button>
                     </Link>
 
                     <Link href="/objednavka-dreva">

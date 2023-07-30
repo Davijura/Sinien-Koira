@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import { useState } from 'react'
 
 export default function FormRadio ({ setIsDeliverySelected }: { setIsDeliverySelected: (isDeliverySelected: boolean) => void }): any {
@@ -24,11 +25,11 @@ export default function FormRadio ({ setIsDeliverySelected }: { setIsDeliverySel
             </div>
 
             {selectedOption === 'Zajistit dopravu' && (
-                <p className="mt-4">Dřevo vozíme vlastním kontejnerem se sklápěním dozadu, na auto naložíme 10 PRM, cena 30Kč/1 km (tam i zpět, minimálně však 600Kč).</p>
+                <p className="mt-4">Dřevo vozíme vlastním kontejnerem se sklápěním dozadu,  na auto naložíme 7 PRM, cena je 30Kč/1km (tam i zpět, minimálně však 400 Kč).</p>
             )}
 
             {selectedOption === 'Osobní vyzvednutí' && (
-                <p className="mt-4">Adresa pro vyzvednutí dřeva je v kontaktech</p>
+                <p className="mt-4">Adresu pro vzvednutí dřeva najdete v <span className='text-green-500 font-bold'><Link href="/contact"> kontaktech</Link></span></p>
             )}
         </div>
   )

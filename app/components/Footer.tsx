@@ -6,7 +6,7 @@ export default function Footer (): any {
           background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)'
         }}>
         <div className="items-center place-self-center text-center md:place-self-start grid-flow-col">
-          <Image src="/logo.png" alt='logo' width="50" height="50" className='hidden md:block mask mask-circle'></Image>
+          <Image src="/result.png" alt='logo' width="50" height="50" className='hidden md:block '></Image>
           <p>Sinien Koira, s. r. o. © 2023 - Všechna práva vyhrazena</p>
         </div>
         <div className="grid-flow-col gap-4 place-self-center md:place-self-center md:justify-self-end">
