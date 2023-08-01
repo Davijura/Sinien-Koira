@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import ContactInfo from './ContactInfo'
 import ContactMap from './ContactMap'
 
-export default function ContactPage (): any {
+export default function ContactPage (): JSX.Element {
   return (
 
         <div className="bg-white items-center justify-center min-h-screen pb-40">

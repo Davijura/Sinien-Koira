@@ -2,7 +2,7 @@ import { type CSSProperties } from 'react'
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 
-export default function HomeHead (): any {
+export default function HomeHead (): JSX.Element {
   const bgStyle: CSSProperties = {
     backgroundImage: 'url(/woods2.jpg)',
     backgroundRepeat: 'no-repeat',

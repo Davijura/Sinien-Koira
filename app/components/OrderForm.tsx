@@ -7,7 +7,7 @@ import Checkbox from './Checkbox'
 import { useOrderForm } from '../hooks/useOrderForm'
 import FormRadio from './FormRadio'
 
-export default function OrderForm (): any {
+export default function OrderForm (): JSX.Element {
   const {
 
     isFormSubmitted, setFormSubmitted, isAgreementChecked, form,

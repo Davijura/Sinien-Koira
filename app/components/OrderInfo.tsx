@@ -4,16 +4,16 @@ interface OrderInfoProps {
   personalData: {
     user_name: string
     user_sureName: string
-    user_phone: string
+    user_phone: number
     user_email: string
     user_address: string
     user_city: string
-    user_psc: string
+    user_psc: number
   }
   onChange: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
-export default function OrderInfo ({ personalData, onChange }: OrderInfoProps): any {
+export default function OrderInfo ({ personalData, onChange }: OrderInfoProps): JSX.Element {
   return (
         <div className="flex flex-wrap -mx-2" >
             <div className="w-full md:w-2/5 lg:w-1/2 px-2" >

@@ -1,6 +1,6 @@
 import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
 
-export default function ContactInfo (): any {
+export default function ContactInfo (): JSX.Element {
   return (
         <div className='flex flex-col sm:flex-row justify-between mx-auto items-start sm:items-center w-full sm:w-[550px] text-black px-4 sm:px-0'>
 

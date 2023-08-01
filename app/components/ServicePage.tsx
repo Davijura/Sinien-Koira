@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import ServiceCard from './ServiceCard'
 
-export default function ServicePage (): any {
+export default function ServicePage (): JSX.Element {
   return (
 
     <div className="bg-white items-center justify-center min-h-screen pb-40">

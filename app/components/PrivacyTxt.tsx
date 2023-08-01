@@ -1,4 +1,4 @@
-export default function PrivacyTxt (): any {
+export default function PrivacyTxt (): JSX.Element {
   return (
         <div className="prose prose-lg text-gray-500 mx-auto p-4">
             <h2 className='text-2xl font-bold text-gray-700 text-center pb-5'>I. Základní ustanovení</h2>

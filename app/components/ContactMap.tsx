@@ -5,7 +5,7 @@ const defaultCenter = {
   lat: 49.5198605, lng: 17.0856296
 }
 
-export default function ContactMap (): any {
+export default function ContactMap (): JSX.Element {
   const size = useWindowSize()
 
   const mapStyles = {

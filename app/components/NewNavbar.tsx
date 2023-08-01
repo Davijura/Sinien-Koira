@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function Navbar (): any {
+export default function Navbar (): JSX.Element {
   return (
         <div className="drawer " >
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />

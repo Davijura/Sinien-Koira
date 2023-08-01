@@ -3,7 +3,7 @@ import NewNavbar from '../components/NewNavbar'
 import GalleryPage from '../components/GalleryPage'
 import NavbarAbove from '../components/NavbarAbove'
 
-export default function Gallery (): any {
+export default function Gallery (): JSX.Element {
   return (
     <div>
 

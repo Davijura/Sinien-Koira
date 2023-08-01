@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import PrivacyTxt from './PrivacyTxt'
 
-export default function ServicePage (): any {
+export default function ServicePage (): JSX.Element {
   return (
 
         <div className="bg-white items-center justify-center min-h-screen pb-40">

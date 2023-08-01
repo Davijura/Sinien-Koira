@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 
-export default function AboutInfo (): any {
+export default function AboutInfo (): JSX.Element {
   return (
         <div className="grid grid-cols-1 mx-auto md:grid-cols-2 gap-20 pb-24 items-center justify-items-center px-4 md:px-0 max-w-max">
 

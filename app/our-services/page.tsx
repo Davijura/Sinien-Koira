@@ -3,7 +3,7 @@ import NewNavbar from '../components/NewNavbar'
 import ServicePage from '../components/ServicePage'
 import NavbarAbove from '../components/NavbarAbove'
 
-export default function OurServices (): any {
+export default function OurServices (): JSX.Element {
   return (
         <div>
 

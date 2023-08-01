@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-export default function ServiceCard (): any {
+export default function ServiceCard (): JSX.Element {
   return (
         <div className='flex flex-col md:flex-row items-center mx-auto justify-center gap-10 text-black pb-12'>
             <div className="card w-[450px] h-[550px] bg-white shadow-xl">

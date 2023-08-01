@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { useState } from 'react'
 
-export default function FormRadio ({ setIsDeliverySelected }: { setIsDeliverySelected: (isDeliverySelected: boolean) => void }): any {
+export default function FormRadio ({ setIsDeliverySelected }: { setIsDeliverySelected: (isDeliverySelected: boolean) => void }): JSX.Element {
   const [selectedOption, setSelectedOption] = useState('')
   const [, setDeliveryOptionSelected] = useState(false)
 

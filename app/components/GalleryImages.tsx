@@ -3,7 +3,7 @@ import { useState } from 'react'
 import { motion } from 'framer-motion'
 
 interface GalleryImage {
-  id: string
+  id: number
   src: string
   alt: string
 }

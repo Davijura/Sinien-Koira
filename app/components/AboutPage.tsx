@@ -5,7 +5,7 @@ import AboutInfo from './AboutInfo'
 import AboutInfoSecond from './AboutInfoSecond'
 import AboutInfoThird from './AboutInfoThird'
 
-export default function AboutPage (): any {
+export default function AboutPage (): JSX.Element {
   const [animated1, setAnimated1] = useState(false)
   const [animated2, setAnimated2] = useState(false)
   const [animated3, setAnimated3] = useState(false)

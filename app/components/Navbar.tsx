@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState, useEffect } from 'react'
 
-export default function Navbar (): any {
+export default function Navbar (): JSX.Element {
   const [drawerOpen, setDrawerOpen] = useState(false)
   const [atTop, setAtTop] = useState(true)
 

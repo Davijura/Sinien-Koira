@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import OrderForm from './OrderForm'
 
-export default function OrderPage (): any {
+export default function OrderPage (): JSX.Element {
   return (
 
         <div className="bg-white items-center justify-center min-h-screen pb-40">

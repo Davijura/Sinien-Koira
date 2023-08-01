@@ -1,6 +1,6 @@
 import { HiOutlineMail, HiOutlinePhone } from 'react-icons/hi'
 
-export default function NavbarAbove (): any {
+export default function NavbarAbove (): JSX.Element {
   return (
         <div className="flex items-center bg-gray-800 h-12 justify-center md:justify-end  lg:px-32 md:px-14 px-8 ">
             <div className="">

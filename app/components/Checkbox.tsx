@@ -6,7 +6,7 @@ interface CheckboxProps {
   onChange: (e: ChangeEvent<HTMLInputElement>) => void
 }
 
-export default function Checkbox ({ isChecked, onChange }: CheckboxProps): any {
+export default function Checkbox ({ isChecked, onChange }: CheckboxProps): JSX.Element {
   return (
 
         <div className="form-control flex flex-col items-center justify-center sm:flex-row sm:items-center sm:justify-between pt-5">
