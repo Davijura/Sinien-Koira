@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/strict-boolean-expressions */
 import { type FormEvent, useState } from 'react'
 import { motion } from 'framer-motion'
 import emailjs from '@emailjs/browser'
