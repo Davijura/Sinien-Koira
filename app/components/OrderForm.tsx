@@ -11,7 +11,7 @@ import FormRadio from './FormRadio'
 export default function OrderForm (): JSX.Element {
   const {
     isFormSubmitted, setFormSubmitted, isAgreementChecked, form,
-    total, prices, quantities, personalData, isSubmissionFailed, setSubmissionFailed, // Přidejte tyto stavy
+    total, prices, quantities, personalData, isSubmissionFailed, setSubmissionFailed,
     handlePersonalDataChange, handleAgreementChange, handleChange, resetForm
   } = useOrderForm()
 
@@ -21,7 +21,7 @@ export default function OrderForm (): JSX.Element {
     e.preventDefault()
 
     if (!personalData.user_name || !personalData.user_sureName || !personalData.user_phone || !personalData.user_email) {
-      setSubmissionFailed(true) // používáte metodu z hooku
+      setSubmissionFailed(true)
       return
     }
 
@@ -72,7 +72,7 @@ export default function OrderForm (): JSX.Element {
 
         <h2 className="block text-black text-lg font-bold mb-4 mt-4">Osobní informace</h2>
 
-        <OrderInfo personalData={personalData} onChange={handlePersonalDataChange} />
+        <OrderInfo personalData={personalData} onChange={handlePersonalDataChange} isSubmissionFailed={isSubmissionFailed} />
 
         <Checkbox isChecked={isAgreementChecked} onChange={handleAgreementChange} />
 

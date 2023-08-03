@@ -1,6 +1,6 @@
 export default function PrivacyTxt (): JSX.Element {
   return (
-        <div className="prose prose-lg text-gray-500 mx-auto p-4">
+        <div className="prose  prose-lg text-gray-500 mx-auto p-4">
             <h2 className='text-2xl font-bold text-gray-700 text-center pb-5'>I. Základní ustanovení</h2>
             <h3 className='text-black pb-3'>1. Správcem osobních údajů podle čl. 4 bod 7 nařízení Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů (dále jen: „GDPR”) je ……. IČ ……se sídlem…..  (dále jen: „správce“).</h3>
             <div>

@@ -11,28 +11,43 @@ interface OrderInfoProps {
     user_psc: number
   }
   onChange: (e: ChangeEvent<HTMLInputElement>) => void
+  isSubmissionFailed: boolean
 }
 
-export default function OrderInfo ({ personalData, onChange }: OrderInfoProps): JSX.Element {
+export default function OrderInfo ({ personalData, onChange, isSubmissionFailed }: OrderInfoProps): JSX.Element {
+  const userNameClass = `shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline ${
+      (Boolean(isSubmissionFailed)) && (personalData.user_name.length === 0) ? 'border-red-500' : ''
+    }`
+  const userSureNameClass = `shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline ${
+      (Boolean(isSubmissionFailed)) && (personalData.user_sureName.length === 0) ? 'border-red-500' : ''
+    }`
+  const userPhoneClass = `shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline ${
+        (Boolean(isSubmissionFailed)) && (personalData.user_phone.toString().length !== 9) ? 'border-red-500' : ''
+      }`
+  const userEmailClass = `shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline ${
+      (Boolean(isSubmissionFailed)) && (personalData.user_email.length === 0) ? 'border-red-500' : ''
+    }`
   return (
         <div className="flex flex-wrap -mx-2" >
             <div className="w-full md:w-2/5 lg:w-1/2 px-2" >
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2">Jméno: <span className="text-red-500">*</span></label>
-                    <input onChange={onChange} type="text" value={personalData.user_name} name="user_name" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline" />
+                    <input onChange={onChange} type="text" value={personalData.user_name} name="user_name" className={userNameClass} />
                 </div>
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2">Příjmení: <span className="text-red-500">*</span></label>
-                    <input onChange={onChange} type="text" value={personalData.user_sureName} name="user_sureName" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline" />
+                    <input onChange={onChange} type="text" value={personalData.user_sureName} name="user_sureName" className={userSureNameClass} />
                 </div>
                 <div className="mb-4">
                     <label className="block text-gray-700 text-sm font-bold mb-2">Telefon: <span className="text-red-500">*</span></label>
-                    <input onChange={onChange} type="phone" value={personalData.user_phone} name="user_phone" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline" />
+                    <input onChange={onChange} type="phone" value={personalData.user_phone} name="user_phone" className={userPhoneClass} />
                 </div>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">E-mail: <span className="text-red-500">*</span></label>
-                    <input onChange={onChange} type="email" value={personalData.user_email} name="user_email" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline" />
+                    <label className="block text-gray-700 text-sm font-bold mb-2 border-blue-600">E-mail: <span className="text-red-500">*</span></label>
+                    <input onChange={onChange} type="email" value={personalData.user_email} name="user_email" className={userEmailClass} />
                 </div>
+
+                <p className='text-gray-700 text-sm italic'><span className='text-red-500'>*</span> Povinné</p>
 
             </div>
             <div className="w-full md:w-3/5 lg:w-1/2 px-2" >
