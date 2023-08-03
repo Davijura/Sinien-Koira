@@ -12,7 +12,7 @@ export default function AboutInfoSecond (): JSX.Element {
             </div>
 
             <div className="md:order-1 h-[370px] max-w-[500px] sm:h-[370px]">
-                <img width={900} height={370} className="w-full h-full object-cover rounded-xl" src="/work.jpg" alt="Work" />
+                <img width={900} height={370} className="w-full h-full object-cover rounded-xl" src="images/work.jpg" alt="Work" />
             </div>
 
         </div>

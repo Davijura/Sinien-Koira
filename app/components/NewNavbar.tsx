@@ -7,13 +7,16 @@ export default function Navbar (): JSX.Element {
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
-                <div className="navbar flex w-full justify-between h-24 lg:px-24 px-10"
-                    style={{
-                      background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)'
-                    }}>
+                <div className="navbar flex w-full justify-between h-24 lg:px-24 px-10 bg-white text-black border-b-2">
                     <div className="navbar-start">
                         <Link href="/">
-                            <p className='text-3xl font-bold whitespace-nowrap lg:text-4xl md:text-3xl '>Sinien Koira</p>
+                            <p className='text-3xl font-bold whitespace-nowrap lg:text-4xl md:text-3xl  ' style={{
+                              background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)',
+                              WebkitBackgroundClip: 'text',
+                              MozBackgroundClip: 'text',
+                              backgroundClip: 'text',
+                              color: 'transparent'
+                            }}>Sinien Koira</p>
                         </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">
@@ -39,7 +42,7 @@ export default function Navbar (): JSX.Element {
                       transition: 'all 0.3s ease-in-out',
                       boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
                     }}>
-                    <Link href="/"><Image className="mb-5 mx-auto rounded-xl" width={112} height={112} src="/logo.png" alt="Logo"/></Link>
+                    <Link href="/"><Image className="mb-5 mx-auto rounded-xl" width={112} height={112} src="/logo.png" alt="Logo" /></Link>
                     <hr className="border-black mb-5" />
                     <Link href="/#about-section">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>O nás</button>

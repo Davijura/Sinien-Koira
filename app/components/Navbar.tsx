@@ -36,7 +36,7 @@ export default function Navbar (): JSX.Element {
                         </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">
-                        <ul className="menu menu-horizontal px-1 text-blue-white font-bold text-xl">
+                        <ul className="menu menu-horizontal max-w-96 px-1 text-blue-white font-bold text-xl">
                             <Link href="/#about-section"><button className="btn-lg rounded-xl btn-ghost">O nás</button></Link>
                             <Link href="/gallery"><button className="btn-lg rounded-xl btn-ghost">Galerie</button></Link>
                             <Link href="/objednavka-dreva"><button className="btn-lg rounded-xl btn-ghost">Objednávka dřeva</button></Link>

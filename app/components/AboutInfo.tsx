@@ -12,7 +12,7 @@ export default function AboutInfo (): JSX.Element {
             </div>
 
             <div className="md:order-2 max-w-[500px] h-[370px]">
-                <img width={500} height={370} className="w-full h-full object-cover rounded-xl" src="/redTractor.jpg" alt="Tractor" />
+                <img width={500} height={370} className="w-full h-full object-cover rounded-xl" src="images/redTractor.jpg" alt="Tractor" />
             </div>
 
         </div>

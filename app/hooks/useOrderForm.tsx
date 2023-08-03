@@ -7,6 +7,7 @@ type IQuantities = Record<string, number>
 export function useOrderForm (): any {
   const [isFormSubmitted, setFormSubmitted] = useState(false)
   const [isAgreementChecked, setAgreementChecked] = useState(false)
+  const [isSubmissionFailed, setSubmissionFailed] = useState(false)
   const form = useRef<HTMLFormElement>(null)
   const [total, setTotal] = useState(0)
   const prices: IPrices = {
@@ -88,16 +89,27 @@ export function useOrderForm (): any {
     if (isFormSubmitted) {
       const timer = setTimeout(() => {
         setFormSubmitted(false)
-      }, 3000)
+      }, 5000)
       return () => { clearTimeout(timer) }
     }
   }, [isFormSubmitted])
+
+  useEffect(() => {
+    if (isSubmissionFailed) {
+      const timer = setTimeout(() => {
+        setSubmissionFailed(false)
+      }, 5000) // časový interval v milisekundách
+      return () => { clearTimeout(timer) }
+    }
+  }, [isSubmissionFailed])
 
   return {
     isFormSubmitted,
     setFormSubmitted,
     isAgreementChecked,
     setAgreementChecked,
+    isSubmissionFailed,
+    setSubmissionFailed,
     form,
     total,
     setTotal,

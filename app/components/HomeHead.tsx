@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export default function HomeHead (): JSX.Element {
   const bgStyle: CSSProperties = {
-    backgroundImage: 'url(/woods2.jpg)',
+    backgroundImage: 'url(images/woods2.jpg)',
     backgroundRepeat: 'no-repeat',
     overflow: 'hidden'
   }

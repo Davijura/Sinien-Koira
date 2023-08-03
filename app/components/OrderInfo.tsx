@@ -18,19 +18,19 @@ export default function OrderInfo ({ personalData, onChange }: OrderInfoProps): 
         <div className="flex flex-wrap -mx-2" >
             <div className="w-full md:w-2/5 lg:w-1/2 px-2" >
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">Jméno:</label>
+                    <label className="block text-gray-700 text-sm font-bold mb-2">Jméno: <span className="text-red-500">*</span></label>
                     <input onChange={onChange} type="text" value={personalData.user_name} name="user_name" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline" />
                 </div>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">Příjmení:</label>
+                    <label className="block text-gray-700 text-sm font-bold mb-2">Příjmení: <span className="text-red-500">*</span></label>
                     <input onChange={onChange} type="text" value={personalData.user_sureName} name="user_sureName" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline" />
                 </div>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">Telefon:</label>
+                    <label className="block text-gray-700 text-sm font-bold mb-2">Telefon: <span className="text-red-500">*</span></label>
                     <input onChange={onChange} type="phone" value={personalData.user_phone} name="user_phone" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline" />
                 </div>
                 <div className="mb-4">
-                    <label className="block text-gray-700 text-sm font-bold mb-2">E-mail:</label>
+                    <label className="block text-gray-700 text-sm font-bold mb-2">E-mail: <span className="text-red-500">*</span></label>
                     <input onChange={onChange} type="email" value={personalData.user_email} name="user_email" className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 bg-white leading-tight focus:outline-none focus:shadow-outline" />
                 </div>
 

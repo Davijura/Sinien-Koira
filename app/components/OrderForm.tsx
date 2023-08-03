@@ -9,9 +9,8 @@ import FormRadio from './FormRadio'
 
 export default function OrderForm (): JSX.Element {
   const {
-
     isFormSubmitted, setFormSubmitted, isAgreementChecked, form,
-    total, prices, quantities, personalData,
+    total, prices, quantities, personalData, isSubmissionFailed, setSubmissionFailed, // Přidejte tyto stavy
     handlePersonalDataChange, handleAgreementChange, handleChange, resetForm
   } = useOrderForm()
 
@@ -19,6 +18,11 @@ export default function OrderForm (): JSX.Element {
 
   const sendEmail = (e: FormEvent): any => {
     e.preventDefault()
+
+    if (!personalData.user_name || !personalData.user_sureName || !personalData.user_phone || !personalData.user_email) {
+      setSubmissionFailed(true) // používáte metodu z hooku
+      return
+    }
 
     // eslint-disable-next-line @typescript-eslint/strict-boolean-expressions
     if (!(isAgreementChecked)) {
@@ -51,7 +55,7 @@ export default function OrderForm (): JSX.Element {
 
   return (
     <div className="flex justify-center">
-      <form ref={form} onSubmit={sendEmail} className="mx-auto w-[850px] bg-gray-200 shadow-xl rounded-xl px-8 pt-10 pb-8 mb-4">
+      <form ref={form} onSubmit={sendEmail} className="mx-auto w-[850px] bg-white shadow-xl rounded-xl px-8 pt-10 pb-8 mb-4">
 
         <OrderWood prices={prices} quantities={quantities} onChange={handleChange} />
 
@@ -84,7 +88,23 @@ export default function OrderForm (): JSX.Element {
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-8 h-8">
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
             </svg>
-            <span className='text-white'>Objednávka úspěšně odeslána.</span>
+            <span className='text-white'>Objednávka úspěšně odeslána!</span>
+          </div>
+        </motion.div>
+      )}
+      {(Boolean(isSubmissionFailed)) && (
+        <motion.div
+          className="toast toast-end"
+          variants={variants}
+          initial='hidden'
+          animate='visible'
+          exit='hidden'
+        >
+          <div className="alert bg-red-500 alert-error gap-1">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="white" className="w-8 h-8">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span className='text-white'>Objednávka se nezdařila!</span>
           </div>
         </motion.div>
       )}
