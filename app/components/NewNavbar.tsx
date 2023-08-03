@@ -42,7 +42,7 @@ export default function Navbar (): JSX.Element {
                       transition: 'all 0.3s ease-in-out',
                       boxShadow: '0px 10px 30px -5px rgba(0, 0, 0, 0.3)'
                     }}>
-                    <Link href="/"><Image className="mb-5 mx-auto rounded-xl" width={112} height={112} src="/logo.png" alt="Logo" /></Link>
+                    <Link href="/"><Image className="mb-5 mx-auto rounded-xl" width={112} height={112} src="images/logo.png" alt="Logo" /></Link>
                     <hr className="border-black mb-5" />
                     <Link href="/#about-section">
                         <button className='btn-ghost rounded-xl py-2 transition-colors duration-300'>O nás</button>
