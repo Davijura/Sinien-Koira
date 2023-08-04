@@ -47,7 +47,7 @@ export default function OrderInfo ({ personalData, onChange, isSubmissionFailed 
                     <input onChange={onChange} type="email" value={personalData.user_email} name="user_email" className={userEmailClass} />
                 </div>
 
-                <p className='text-gray-700 text-sm italic'><span className='text-red-500'>*</span> Povinné</p>
+                <p className='text-gray-700 text-sm italic'><span className='text-red-500'>*</span> Povinné údaje</p>
 
             </div>
             <div className="w-full md:w-3/5 lg:w-1/2 px-2" >
