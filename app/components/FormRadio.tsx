@@ -29,7 +29,7 @@ export default function FormRadio ({ setIsDeliverySelected }: { setIsDeliverySel
             )}
 
             {selectedOption === 'Osobní vyzvednutí' && (
-                <p className="mt-4">Adresu pro vzvednutí dřeva najdete v <span className='text-green-500 font-bold'><Link href="/contact"> kontaktech</Link></span></p>
+                <p className="mt-4">Adresu pro vzvednutí dřeva naleznete v <span className='text-green-500 font-bold'><Link href="/contact"> kontaktech</Link></span></p>
             )}
         </div>
   )
