@@ -16,7 +16,7 @@ const images: GalleryImage[] = [
   { id: 6, src: 'images/mediumTree.jpg', alt: 'Popis obrázku 1' },
   { id: 7, src: 'images/fence.jpg', alt: 'Popis obrázku 1' },
   { id: 8, src: 'images/smallTrees.jpg', alt: 'Popis obrázku 1' },
-  { id: 9, src: 'images/tree.jpg', alt: 'Popis obrázku 1' },
+  { id: 9, src: 'images/TruckWood.jpg', alt: 'Popis obrázku 1' },
   { id: 10, src: 'images/root.jpg', alt: 'Popis obrázku 1' },
   { id: 11, src: 'images/tractor.jpg', alt: 'Traktor' },
   { id: 12, src: 'images/tractor-2-new.jpg', alt: 'Traktor' }
