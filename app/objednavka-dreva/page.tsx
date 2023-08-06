@@ -10,6 +10,7 @@ export default function ObjednavkaDreva (): JSX.Element {
     <div>
       <Head>
         <title>Sinien Koira - Objednávka dřeva</title>
+        <meta content='Sinien Koira - Objednávka dřeva' key="order-title" />
       </Head>
 
       <div className='hidden sm:block'>
