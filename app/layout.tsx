@@ -5,7 +5,6 @@ import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Sinien Koira',
   description: 'Lesnictví a prodej palivového dřeva',
   keywords: 'dřevo, pila, traktor, objednávka, dřevopráce, lesnictví, les, vlečka, palivové, tvrdé, měkké, prodej, zelená, Sinien Koira, Čelechovice na Hané'
 }
