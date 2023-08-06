@@ -2,16 +2,10 @@
 import NewNavbar from '../components/NewNavbar'
 import OrderPage from '../components/OrderPage'
 import NavbarAbove from '../components/NavbarAbove'
-import Head from 'next/head'
 
 export default function ObjednavkaDreva (): JSX.Element {
   return (
-
     <div>
-      <Head>
-        <title>Sinien Koira - Objednávka dřeva</title>
-        <meta content='Sinien Koira - Objednávka dřeva' key="order-title" />
-      </Head>
 
       <div className='hidden sm:block'>
         <NavbarAbove />
