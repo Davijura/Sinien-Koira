@@ -5,8 +5,9 @@ import Footer from './components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
-  title: 'Sinien Koira',
-  description: 'Dřevopráce'
+  // title: 'Sinien Koira',
+  description: 'Lesnictví a prodej palivového dřeva',
+  keywords: 'dřevo, pila, traktor, objednávka, dřevopráce, lesnictví, les,a vlečka, palivové, tvrdé, měkké'
 }
 
 export default function RootLayout ({
