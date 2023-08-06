@@ -2,16 +2,16 @@ export default function PrivacyTxt (): JSX.Element {
   return (
         <div className="prose  prose-lg text-gray-500 mx-auto p-4">
             <h2 className='text-2xl font-bold text-gray-700 text-center pb-5'>I. Základní ustanovení</h2>
-            <h3 className='text-black pb-3'>1. Správcem osobních údajů podle čl. 4 bod 7 nařízení Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů (dále jen: „GDPR”) je ……. IČ ……se sídlem…..  (dále jen: „správce“).</h3>
+            <h3 className='text-black pb-3'>1. Správcem osobních údajů podle čl. 4 bod 7 nařízení Evropského parlamentu a Rady (EU) 2016/679 o ochraně fyzických osob v souvislosti se zpracováním osobních údajů a o volném pohybu těchto údajů (dále jen: „GDPR”) je Sinien Koira, s. r. o. IČ: 11980389 se sídlem Jaurisova 515/4, Michle, 140 00 Praha 4 (dále jen: „správce“).</h3>
             <div>
 
             </div>
             <h3 className='text-black'>2. Kontaktní údaje správce jsou</h3>
 
             <ol className="pl-5 pb-3 mt-2 text-gray-700">
-                <li className="mt-1">• adresa:</li>
-                <li className="mt-1">• email:</li>
-                <li className="mt-1">• telefon:</li>
+                <li className="mt-1">• adresa: Jaursivoa 515/4, Michle, 140 00 Praha 4</li>
+                <li className="mt-1">• email: sinienkoira@gmail.com</li>
+                <li className="mt-1">• telefon:+420 720 062 090</li>
             </ol>
 
             <h3 className='text-black pb-3'>3. Osobními údaji se rozumí veškeré informace o identifikované nebo identifikovatelné fyzické osobě; identifikovatelnou fyzickou osobou je fyzická osoba, kterou lze přímo či nepřímo identifikovat, zejména odkazem na určitý identifikátor, například jméno, identifikační číslo, lokační údaje, síťový identifikátor nebo na jeden či více zvláštních prvků fyzické, fyziologické, genetické, psychické, ekonomické, kulturní nebo společenské identity této fyzické osoby.</h3>
@@ -96,7 +96,7 @@ export default function PrivacyTxt (): JSX.Element {
             </div>
 
             <div className="mt-8 text-center">
-                <p className="text-gray-700">Tyto podmínky nabývají účinnosti dnem 25.5.2018.</p>
+                <p className="text-gray-700">Tyto podmínky nabývají účinnosti dnem 01.08.2023.</p>
             </div>
         </div>
 
