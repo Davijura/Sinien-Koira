@@ -7,7 +7,7 @@ export default function OrderPage (): JSX.Element {
             <div className='container mx-auto'>
                 <div className='mx-auto justify-center text-black items-center flex'>
                         <h1 className="text-5xl mb-16 mt-12 mx-auto text-center font-semibold text-black w-full sm:w-[700px]">
-                            Objednávka dřeva
+                            Nezávazná objednávka
                         </h1>
                 </div>
                 <OrderForm />
