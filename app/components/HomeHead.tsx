@@ -38,7 +38,7 @@ export default function HomeHead (): JSX.Element {
 
                         <div className="flex flex-row gap-4 justify-left">
                             <Link href="/objednavka-dreva">
-                                <button className="btn btn-primary py-2 hover:bg-green-800 bg-green-600 border-none">
+                                <button className="btn btn-primary py-2 text-white hover:bg-green-800 bg-green-600 border-none">
                                     Objednávka dřeva
                                 </button>
                             </Link>
