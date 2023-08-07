@@ -11,7 +11,7 @@ export default function ContactMap (): JSX.Element {
   }
 
   return (
-    <div className="card w-[500px] shadow-xl bg-white">
+    <div className="card w-[350px] sm:w-[500px] shadow-xl bg-white">
         <div className='' style={{ height: '570px' }}>
           <LoadScript googleMapsApiKey='AIzaSyDTfDO8K3WJ0fzu2UPGii--OXQxKV0o6iM'>
             <GoogleMap

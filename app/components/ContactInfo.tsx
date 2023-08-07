@@ -1,7 +1,7 @@
 export default function ContactInfo (): JSX.Element {
   return (
         <div className='flex flex-col gap-5 text-black'>
-            <div className="card w-[400px] shadow-xl bg-white">
+            <div className="card w-[350px] sm:w-[400px] shadow-xl bg-white">
                 <div className="card-body">
                     <h2 className="card-title text-green-600 uppercase">Kontakt</h2>
                     <p><span className='font-semibold'>Mobil:</span> <a href="tel:720062090">+420 720 062 090</a></p>
@@ -9,7 +9,7 @@ export default function ContactInfo (): JSX.Element {
                 </div>
             </div>
 
-            <div className="card w-[400px] shadow-xl bg-white">
+            <div className="card w-[350px] sm:w-[400px] shadow-xl bg-white">
                 <div className="card-body">
                     <h2 className="card-title text-green-600 uppercase">Sinien Koira s. r. o.</h2>
                     <h3 className='card-title py-1'>Výdej dřeva:</h3>
