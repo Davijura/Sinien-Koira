@@ -37,8 +37,6 @@ export default function AboutPage (): JSX.Element {
   return (
         <section className="bg-white items-center justify-center min-h-screen py-20" id="about-section">
 
-            <div className='container mx-auto'>
-
                 <div className='mx-auto justify-center text-black items-center flex'>
                     <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
                         <h1 className="text-5xl mb-16 mt-12 border-b-2 border-gray-200 pb-5  sm:text-6xl mx-auto text-left font-bold text-black w-full sm:w-[700px]">
@@ -58,8 +56,6 @@ export default function AboutPage (): JSX.Element {
                 <motion.div ref={ref3} initial={{ opacity: 0, x: -200 }} animate={{ opacity: animated3 ? 1 : 0, x: animated3 ? 0 : -200 }} transition={{ duration: 1 }}>
                     <AboutInfoThird />
                 </motion.div>
-
-            </div>
 
         </section>
   )
