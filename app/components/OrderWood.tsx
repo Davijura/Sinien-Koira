@@ -24,7 +24,7 @@ const OrderWood: React.FC<IOrderWoodProps> = ({ prices, quantities, onChange }) 
   return (
         <div className="flex flex-wrap -mx-2">
             <div className="w-full lg:w-1/2 px-2">
-                <h2 className="block text-black text-lg font-bold mb-4">TVRDÉ PALIVOVÉ DŘEVO</h2>
+                <h2 className="block text-black text-xl font-bold mb-4">TVRDÉ PALIVOVÉ DŘEVO</h2>
                 {hardWoodKeys.map(key => (
                     <div key={key} className="mb-4">
                         <div className="flex justify-between">
@@ -43,7 +43,7 @@ const OrderWood: React.FC<IOrderWoodProps> = ({ prices, quantities, onChange }) 
                 ))}
             </div>
             <div className="w-full lg:w-1/2 px-2">
-                <h2 className="block text-black text-lg font-bold mb-4">MĚKKÉ PALIVOVÉ DŘEVO</h2>
+                <h2 className="block text-black text-xl font-bold mb-4">MĚKKÉ PALIVOVÉ DŘEVO</h2>
                 {softWoodKeys.map(key => (
                     <div key={key} className="mb-4">
                         <div className="flex justify-between">

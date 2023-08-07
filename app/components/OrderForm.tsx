@@ -63,7 +63,7 @@ export default function OrderForm (): JSX.Element {
         <div className="divider "></div>
 
         <div>
-          <p className='text-black font-bold'>Celková cena: {total} Kč </p>
+          <p className='text-black font-bold'>Celková cena (bez dopravy): {total} Kč </p>
         </div>
 
         <div className="divider"></div>
