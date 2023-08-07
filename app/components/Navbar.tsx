@@ -32,11 +32,11 @@ export default function Navbar (): JSX.Element {
                     style={atTop ? {} : { background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)', opacity: 0.9 }}>
                     <div className="navbar-start ">
                         <Link href="/">
-                            <p className='text-3xl font-bold whitespace-nowrap lg:text-4xl md:text-3xl '>Sinien Koira</p>
+                            <p className='text-3xl font-bold whitespace-nowrap lg:text-4xl md:text-3xl text-white'>Sinien Koira</p>
                         </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">
-                        <ul className="menu menu-horizontal max-w-96 px-1 text-blue-white font-bold text-xl">
+                        <ul className="menu menu-horizontal max-w-96 px-1 text-white font-bold text-xl">
                             <Link href="/#about-section"><button className="btn-lg rounded-xl btn-ghost">O nás</button></Link>
                             <Link href="/gallery"><button className="btn-lg rounded-xl btn-ghost">Galerie</button></Link>
                             <Link href="/objednavka-dreva"><button className="btn-lg rounded-xl btn-ghost">Objednávka dřeva</button></Link>
