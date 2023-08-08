@@ -7,7 +7,7 @@ export default function Navbar (): JSX.Element {
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
-                <div className="navbar flex w-full justify-between h-24 lg:px-24 px-10 bg-white text-black border-b-2">
+                <div className="navbar flex w-full justify-between h-24 lg:px-24 px-10 bg-white text-black shadow-md">
                     <div className="navbar-start">
                         <Link href="/">
                             <p className='text-3xl font-bold whitespace-nowrap lg:text-4xl md:text-3xl  ' style={{
