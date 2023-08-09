@@ -12,7 +12,7 @@ export default function HomeHead (): JSX.Element {
   const overlayStyle: CSSProperties = {
     height: '100%',
     width: '100%',
-    backgroundColor: 'rgba(0,0,0,0.5)'
+    backgroundColor: 'rgba(0,0,0,0.6)'
   }
 
   const handleBouncerClick = (): any => {
