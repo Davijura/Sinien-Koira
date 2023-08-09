@@ -46,7 +46,7 @@ export default function PrivacyTxt (): JSX.Element {
                 <h3 className='text-black'>1. Správce uchovává osobní údaje</h3>
                 <ol className="pl-5 pb-3 mt-2 text-gray-700">
                     <li className="mt-1">• po dobu nezbytnou k výkonu práv a povinností vyplývajících ze smluvního vztahu mezi Vámi a správcem a uplatňování nároků z těchto smluvních vztahů (po dobu 15 let od ukončení smluvního vztahu). </li>
-                    <li className="mt-1">• po dobu, než je odvolán souhlas se zpracováním osobních údajů pro účely marketingu, nejdéle ….  let, jsou-li osobní údaje zpracovávány na základě souhlasu. </li>
+                    <li className="mt-1">• po dobu, než je odvolán souhlas se zpracováním osobních údajů pro účely marketingu, nejdéle tří let, jsou-li osobní údaje zpracovávány na základě souhlasu. </li>
                 </ol>
                 <h3 className='text-black'>2. Po uplynutí doby uchovávání osobních údajů správce osobní údaje vymaže.</h3>
 
