@@ -30,7 +30,7 @@ export default function HomeHead (): JSX.Element {
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
                 <div className="hero-content flex flex-col text-left">
 
-                    <div className='max-w-[800px] '>
+                    <div className='max-w-[800px] pl-5 md:pl-0 '>
                         <h1 className="text-5xl md:text-5xl lg:text-6xl text-white font-bold leading-none">
                             Odborné  <span className="font-bold text-green-600">lesnictví</span> a  <span className="font-bold text-green-600">výsadba stromů</span> pro lepší budoucnost
                         </h1>

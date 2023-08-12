@@ -5,7 +5,7 @@ import AboutInfoThird from './AboutInfoThird'
 
 export default function AboutPage (): JSX.Element {
   return (
-    <section className="bg-white items-center justify-center min-h-screen py-20 w-screen" id="about-section">
+    <section className="bg-white items-center justify-center min-h-screen py-20" id="about-section">
 
       <div className='mx-auto justify-center text-black items-center flex'>
         <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
