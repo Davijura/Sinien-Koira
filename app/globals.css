@@ -26,3 +26,8 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.navbar {
+  padding-top: env(safe-area-inset-top);
+  background-color: #43A047; /* Zde můžete změnit barvu podle svého navbaru */
+}
