@@ -8,7 +8,7 @@ class MyDocument extends Document {
           {/* Přidejte zde všechny globální meta tagy, styly, skripty atd. */}
 
           {/* Příklad: viewport pro responzivní design */}
-          <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+          <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
           {/* Příklad: nastavení barvy pro status bar na mobilních zařízeních */}
           <meta name="theme-color" content="#43A047" />
