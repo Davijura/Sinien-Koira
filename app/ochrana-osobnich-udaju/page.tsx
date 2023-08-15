@@ -2,6 +2,7 @@
 import NewNavbar from '../components/NewNavbar'
 import NavbarAbove from '../components/NavbarAbove'
 import PrivacyPage from '../components/PrivacyPage'
+import Footer from '../components/Footer'
 
 export default function OurServices (): JSX.Element {
   return (
@@ -14,6 +15,8 @@ export default function OurServices (): JSX.Element {
             <NewNavbar />
 
             <PrivacyPage />
+
+            <Footer/>
 
         </div>
 

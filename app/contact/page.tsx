@@ -2,6 +2,7 @@
 import NewNavbar from '../components/NewNavbar'
 import ContactPage from '../components/ContactPage'
 import NavbarAbove from '../components/NavbarAbove'
+import Footer from '../components/Footer'
 
 export default function Contact (): JSX.Element {
   return (
@@ -14,6 +15,8 @@ export default function Contact (): JSX.Element {
             <NewNavbar />
 
             <ContactPage />
+
+            <Footer />
 
         </div>
 

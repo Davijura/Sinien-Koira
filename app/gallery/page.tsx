@@ -2,6 +2,7 @@
 import NewNavbar from '../components/NewNavbar'
 import GalleryPage from '../components/GalleryPage'
 import NavbarAbove from '../components/NavbarAbove'
+import Footer from '../components/Footer'
 
 export default function Gallery (): JSX.Element {
   return (
@@ -14,6 +15,8 @@ export default function Gallery (): JSX.Element {
       <NewNavbar />
 
       <GalleryPage />
+
+      <Footer />
 
     </div>
 
