@@ -29,7 +29,7 @@ export default function Navbar (): JSX.Element {
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" checked={drawerOpen} onChange={toggleDrawer} />
             <div className="drawer-content">
                  <div className={`navbar flex justify-between h-24 md:h-28 lg:px-40  px-10 z-20 fixed ${atTop ? ' bg-[#388e3c] md:bg-transparent' : ''}`}
-                    style={atTop ? {} : { background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)', opacity: 0.9 }}>
+                    style={atTop ? {} : { background: '#388e3c' }}>
                     <div className="navbar-start">
                         <Link href="/">
                             <p className='text-3xl font-bold whitespace-nowrap lg:text-4xl md:text-3xl text-white'>Sinien Koira</p>
