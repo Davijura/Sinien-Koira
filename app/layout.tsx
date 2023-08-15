@@ -10,7 +10,7 @@ export const metadata = {
   description: 'Lesnictví a prodej palivového dřeva',
   keywords: 'dřevo, pila, traktor, objednávka, dřevopráce, lesnictví, les, vlečka, palivové, tvrdé, měkké, prodej, zelená, Sinien Koira, Čelechovice na Hané',
   viewport: 'device-width, initial-scale=1, shrink-to-fit=no',
-  themeColor: '#243b55'
+  themeColor: '#38a169'
 }
 
 export default function RootLayout ({
