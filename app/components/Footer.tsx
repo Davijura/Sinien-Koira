@@ -2,10 +2,7 @@ import Image from 'next/image'
 
 export default function Footer (): JSX.Element {
   return (
-        <footer className="footer items-center p-4 md:px-20 bg-neutral text-white"
-          style={{
-            background: 'radial-gradient(circle at -1% 57.5%, rgb(19, 170, 82) 0%, rgb(0, 102, 43) 90%)'
-          }}>
+        <footer className="footer items-center p-4 md:px-20 bg-[#388e3c] text-white">
         <div className="items-center place-self-center text-center md:place-self-start grid-flow-col">
           <Image src="/images/result.png" alt='logo' width="50" height="50" className='hidden md:block '></Image>
           <p>Sinien Koira, s. r. o. © 2023 - Všechna práva vyhrazena</p>

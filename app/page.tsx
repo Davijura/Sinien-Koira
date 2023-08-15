@@ -3,7 +3,6 @@ import React from 'react'
 import HomeHead from './components/HomeHead'
 import Navbar from './components/Navbar'
 import AboutPage from './components/AboutPage'
-import FooterNew from './components/FooterNew'
 
 export default function Home (): JSX.Element {
   return (
@@ -14,8 +13,6 @@ export default function Home (): JSX.Element {
       <HomeHead />
 
       <AboutPage />
-
-      <FooterNew />
 
     </div>
   )
