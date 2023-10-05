@@ -24,11 +24,11 @@ export default function HomeHead (): JSX.Element {
   }
 
   return (
-        <div className="hero bg-white min-h-screen relative" style={bgStyle}>
+        <div className="hero bg-white h-[90vh] relative" style={bgStyle}>
             <div style={overlayStyle} />
 
             <motion.div initial={{ opacity: 0, scale: 0.9 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: 1 }}>
-                <div className="hero-content flex flex-col text-left">
+                <div className="hero-content flex flex-col text-left pt-6">
 
                     <div className='max-w-[750px] sm:max-w-[800px]'>
                         <h1 className="text-4xl sm:text-5xl lg:text-6xl text-white font-bold leading-none">

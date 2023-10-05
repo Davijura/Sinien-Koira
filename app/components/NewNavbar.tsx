@@ -7,7 +7,7 @@ export default function Navbar (): JSX.Element {
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" />
             <div className="drawer-content flex flex-col">
                 {/* Navbar */}
-                <div className="navbar flex w-full justify-between h-24 lg:px-24 px-10 bg-white text-black shadow-md">
+                <div className="navbar flex w-full justify-between h-22 sm:h-24 lg:px-24 px-10 bg-white text-black shadow-md">
                     <div className="navbar-start">
                         <Link href="/">
                             <p className='text-3xl font-bold whitespace-nowrap lg:text-4xl md:text-3xl  ' style={{
@@ -29,7 +29,7 @@ export default function Navbar (): JSX.Element {
                     </div>
                     <div className="flex-none lg:hidden">
                         <label htmlFor="my-drawer-3" className="btn btn-square btn-ghost">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-9 h-9 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-6 h-6 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
                         </label>
                     </div>
                 </div>
