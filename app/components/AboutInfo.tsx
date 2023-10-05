@@ -2,7 +2,7 @@
 
 export default function AboutInfo (): JSX.Element {
   return (
-        <div className="grid grid-cols-1 mx-auto md:grid-cols-2 gap-20 pb-32 items-center justify-items-center px-4 md:px-0 max-w-max">
+        <div className="grid grid-cols-1 mx-auto md:grid-cols-2 gap-12 pb-20 items-center justify-items-center px-4 md:px-0 max-w-max">
 
             <div className="md:order-1 max-w-[450px]">
                 <p className='font-bold text-black text-3xl pb-5 text-left'><strong>Vítejte u Vašeho společníka v oblasti lesnictví, těžby dřeva a pěstebních činností</strong></p>
