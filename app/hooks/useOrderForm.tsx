@@ -2,7 +2,7 @@ import { useRef, useState, type ChangeEvent, useEffect } from 'react'
 
 type IPrices = Record<string, number>
 
-type IQuantities = Record<string, number>
+type IQuantities = Record<string, number | string>
 
 export function useOrderForm (): any {
   const [isFormSubmitted, setFormSubmitted] = useState(false)
@@ -48,18 +48,20 @@ export function useOrderForm (): any {
     setAgreementChecked(e.target.checked)
   }
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement>): any => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>): void => {
     const { name, value } = e.target
 
-    const newQuantities = {
+    setQuantities({
       ...quantities,
-      [name]: Number(value)
-    }
-    setQuantities(newQuantities)
-    let newTotal = 0
-    for (const key in newQuantities) {
-      newTotal += newQuantities[key] * prices[key]
-    }
+      [name]: value
+    })
+
+    const numericValue = value === '' ? 0 : Number(value)
+
+    const newTotal = Object.keys(quantities).reduce((acc, key) => {
+      const itemValue = key === name ? numericValue : (Number(quantities[key]) !== 0 ? Number(quantities[key]) : 0)
+      return acc + (itemValue * prices[key])
+    }, 0)
     setTotal(newTotal)
   }
 
@@ -98,7 +100,7 @@ export function useOrderForm (): any {
     if (isSubmissionFailed) {
       const timer = setTimeout(() => {
         setSubmissionFailed(false)
-      }, 5000) // časový interval v milisekundách
+      }, 5000)
       return () => { clearTimeout(timer) }
     }
   }, [isSubmissionFailed])

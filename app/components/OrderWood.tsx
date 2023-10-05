@@ -32,8 +32,7 @@ const OrderWood: React.FC<IOrderWoodProps> = ({ prices, quantities, onChange }) 
                             <span className="text-gray-700 text-sm mb-2">{prices[key]} Kč</span>
                         </div>
                         <input
-                            type="number"
-                            min={0}
+                            type="text"
                             value={quantities[key]}
                             name={key}
                             onChange={onChange}
@@ -51,8 +50,7 @@ const OrderWood: React.FC<IOrderWoodProps> = ({ prices, quantities, onChange }) 
                             <span className="text-gray-700 text-sm mb-2">{prices[key]} Kč</span>
                         </div>
                         <input
-                            type="number"
-                            min={0}
+                            type="text"
                             value={quantities[key]}
                             name={key}
                             onChange={onChange}
