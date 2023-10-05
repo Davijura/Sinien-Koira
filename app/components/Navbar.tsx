@@ -28,7 +28,7 @@ export default function Navbar (): JSX.Element {
         <div className={'drawer z-10'}>
             <input id="my-drawer-3" type="checkbox" className="drawer-toggle" checked={drawerOpen} onChange={toggleDrawer} />
             <div className="drawer-content">
-                 <div className={`navbar flex justify-between h-22 sm:h-24  lg:px-40 pt-8  px-10 z-20 fixed ${atTop ? ' bg-[#388e3c] md:bg-transparent' : ''}`}
+                 <div className={`navbar flex justify-between h-22 sm:h-24 lg:px-24 px-10 z-20 fixed ${atTop ? ' bg-[#388e3c] md:bg-transparent' : ''}`}
                     style={atTop ? {} : { background: '#388e3c' }}>
                     <div className="navbar-start">
                         <Link href="/">
